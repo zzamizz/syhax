@@ -36,7 +36,6 @@ namespace syhax
                 Label.Text = value.ToString("f5");
             });
         }
-
         public static void DelgeateThisShit(Label Label, string text)
         {
             Label.Invoke((MethodInvoker)delegate
@@ -69,146 +68,90 @@ namespace syhax
 
         public string toggleBattleMus;
         public string toggleSneakMus;
-        string botBattleMusNTSC = "203DD09C";
-        string botSneakMusNTSC = "203DD0A0";
+        string BattleMusNTSC = "203DD09C";
+        string SneakMusNTSC = "203DD0A0";
 
         public string slyGadget; //gadget power
-        string botSlyGadgetPAL = "203DC2B4";
-        string botSlyGadgetNTSC = "203D4AB4";
+        string SlyGadgetPAL = "203DC2B4";
+        string SlyGadgetNTSC = "203D4AB4";
         public string bentleyGadget;
-        string botBentleyGadgetPAL = "203DC2E4";
-        string botBentleyGadgetNTSC = "203D4ACC";
+        string BentleyGadgetPAL = "203DC2E4";
+        string BentleyGadgetNTSC = "203D4ACC";
         public string murrayGadget;
-        string botMurrayGadgetPAL = "203DC2CC";
-        string botMurrayGadgetNTSC = "203D4AE4";
+        string MurrayGadgetPAL = "203DC2CC";
+        string MurrayGadgetNTSC = "203D4AE4";
 
         public string unlockGadgets1;
         public string unlockGadgets2;
-        string botUnlockGadgets1PAL = "203DC2F8";
-        string botUnlockGadgets2PAL = "203DC2FC";
-        string botUnlockGadgets1NTSC = "203D4AF8";
-        string botUnlockGadgets2NTSC = "203D4AFC";
-        string botUnlockGadgets1NTSCJ = "203DE2F8";
-        string botUnlockGadgets2NTSCJ = "203DE2FC";
+        string UnlockGadgets1PAL = "203DC2F8";
+        string UnlockGadgets2PAL = "203DC2FC";
+        string UnlockGadgets1NTSC = "203D4AF8";
+        string UnlockGadgets2NTSC = "203D4AFC";
+        string UnlockGadgets1NTSCJ = "203DE2F8";
+        string UnlockGadgets2NTSCJ = "203DE2FC";
 
         public string disableGuardAI;
-        string botDisableGuardAIPAL = "203E8A14";
-        string botDisableGuardAINTSC = "203E1214";
+        string DisableGuardAIPAL = "203E8A14";
+        string DisableGuardAINTSC = "203E1214";
 
         public string charIDAddr;
-        string botCharIDPAL = "203DC26C";
-        string botCharIDNTSC = "203D4A6C";
-        string botCharIDNTSCJ = "20000000"; //placeholder
-        string botCharIDNTSCK = "20000000"; //placeholder
-        string botCharIDMar17 = "20000000"; //placeholder
-        string botCharIDJul12 = "20000000"; //placeholder
+        string CharIDPAL = "203DC26C";
+        string CharIDNTSC = "203D4A6C";
+        string CharIDNTSCJ = "20000000"; //placeholder
+        string CharIDNTSCK = "20000000"; //placeholder
+        string CharIDMar17 = "20000000"; //placeholder
+        string CharIDJul12 = "20000000"; //placeholder
 
         public string slyHP;
         public string slyHPAmount;
-        string botSlyHPPAL = "203DC2B0";
-        string botSlyHPNTSC = "203D4AB0";
-        string botSlyHPNTSCJ = "203DE2B0";
-        string botSlyHPNTSCK = "203DD930";
+        string SlyHPPAL = "203DC2B0";
+        string SlyHPNTSC = "203D4AB0";
+        string SlyHPNTSCJ = "203DE2B0";
+        string SlyHPNTSCK = "203DD930";
 
         public string bentleyHP;
         public string bentleyHPAmount;
-        string botBentleyHPPAL = "203DC2C8";
-        string botBentleyHPNTSC = "203D4AC8";
-        string botBentleyHPNTSCJ = "203DE2C8";
+        string BentleyHPPAL = "203DC2C8";
+        string BentleyHPNTSC = "203D4AC8";
+        string BentleyHPNTSCJ = "203DE2C8";
 
         public string murrayHP;
         public string murrayHPAmount;
-        string botMurrayHPPAL = "203DC2E0";
-        string botMurrayHPNTSC = "203D4AE0";
-        string botMurrayHPNTSCJ = "203DE2E0";
+        string MurrayHPPAL = "203DC2E0";
+        string MurrayHPNTSC = "203D4AE0";
+        string MurrayHPNTSCJ = "203DE2E0";
 
         public string actStructBase; //active character pointer
-        string botActBasePAL = "202E55A0";
-        string botActBaseNTSC = "202DE2F0";
-        string botActBaseNTSCJ = "20000000"; //placeholder
-        string botActBaseNTSCK = "20000000"; //placeholder
-        string botActBaseMar17 = "20000000"; //placeholder
-        string botActBaseJul12 = "20000000"; //placeholder
+        string ActBasePAL = "202E55A0";
+        string ActBaseNTSC = "202DE2F0";
+        string ActBaseNTSCJ = "20000000"; //placeholder
+        string ActBaseNTSCK = "20000000"; //placeholder
+        string ActBaseMar17 = "20000000"; //placeholder
+        string ActBaseJul12 = "20000000"; //placeholder
 
         public string slyStructBase;
-        string botSlyBasePAL = "202E9240";
-        string botSlyBaseNTSC = "202E1E40";
-        string botSlyBaseNTSCJ = "20000000"; //placeholder
-        string botSlyBaseNTSCK = "20000000"; //placeholder
-        string botSlyBaseMar17 = "20000000"; //placeholder
-        string botSlyBaseJul12 = "20000000"; //placeholder
+        string SlyBasePAL = "202E9240";
+        string SlyBaseNTSC = "202E1E40";
+        string SlyBaseNTSCJ = "20000000"; //placeholder
+        string SlyBaseNTSCK = "20000000"; //placeholder
+        string SlyBaseMar17 = "20000000"; //placeholder
+        string SlyBaseJul12 = "20000000"; //placeholder
 
         public string bentleyStructBase;
-        string botBentleyBasePAL = "20000000"; //placeholder
-        string botBentleyBaseNTSC = "202DD5BC";
-        string botBentleyBaseNTSCJ = "20000000"; //placeholder
-        string botBentleyBaseNTSCK = "20000000"; //placeholder
-        string botBentleyBaseMar17 = "20000000"; //placeholder
-        string botBentleyBaseJul12 = "20000000"; //placeholder
+        string BentleyBasePAL = "20000000"; //placeholder
+        string BentleyBaseNTSC = "202DD5BC";
+        string BentleyBaseNTSCJ = "20000000"; //placeholder
+        string BentleyBaseNTSCK = "20000000"; //placeholder
+        string BentleyBaseMar17 = "20000000"; //placeholder
+        string BentleyBaseJul12 = "20000000"; //placeholder
 
         public string murrayStructBase;
-        string botMurrayBasePAL = "20000000"; //placeholder
-        string botMurrayBaseNTSC = "202F7900";
-        string botMurrayBaseNTSCJ = "20000000"; //placeholder
-        string botMurrayBaseNTSCK = "20000000"; //placeholder
-        string botMurrayBaseMar17 = "20000000"; //placeholder
-        string botMurrayBaseJul12 = "20000000"; //placeholder
-
-        public string neylaStructBase;
-        string botNeylaBasePAL = "20000000"; //placeholder
-        string botNeylaBaseNTSC = "203E0798";
-        string botNeylaBaseNTSCJ = "20000000"; //placeholder
-        string botNeylaBaseNTSCK = "20000000"; //placeholder
-        string botNeylaBaseMar17 = "20000000"; //placeholder
-        string botNeylaBaseJul12 = "20000000"; //placeholder
-
-        public string dimitriStructBase;
-        string botDimitriBasePAL = "20000000"; //placeholder
-        string botDimitriBaseNTSC = "203E078C";
-        string botDimitriBaseNTSCJ = "20000000"; //placeholder
-        string botDimitriBaseNTSCK = "20000000"; //placeholder
-        string botDimitriBaseMar17 = "20000000"; //placeholder
-        string botDimitriBaseJul12 = "20000000"; //placeholder
-
-        public string carmStructBase;
-        string botCarmBasePAL = "20000000"; //placeholder
-        string botCarmBaseNTSC = "20000000"; //placeholder
-        string botCarmBaseNTSCJ = "20000000"; //placeholder
-        string botCarmBaseNTSCK = "20000000"; //placeholder
-        string botCarmBaseMar17 = "20000000"; //placeholder
-        string botCarmBaseJul12 = "20000000"; //placeholder
-
-        public string gangHPGUI;
-        string botGangHPGUIPAL = "203E16B8";
-        string botGangHPGUINTSC = "203D9EB8";
-
-        public string coinGUI;
-        string botCoinGUIPAL = "203E883C";
-
-        public string bottleGUI;
-        string botBottleGUIPAL = "203E8848";
-        string botBottleGUINTSC = "203E1048";
-
-        public string ejectGUI;
-        string botEjectGUIPAL = "203E1D14";
-
-        public string blackbarsGUI;
-        string botBlackbarsGUIPAL = "202E9260";
-        string botBlackbarsGUINTSC = "202E1E60";
-
-        public string infoboxGUI;
-        string botInfoboxGUIPAL = "203E18E8";
-        string botInfoboxGUINTSC = "203DA0E8";
-
-        public string slymaskGUI;
-        string botSlyMaskGUIPAL = "2044AF94";
-
-        public string failGUI;
-        string botFailGUIPAL = "203E82BC";
-        string botFailGUINTSC = "203E0ABC";
-
-        public string thiefNetGUI;
-        string botThiefNetGUINTSC = "203DA174";
+        string MurrayBasePAL = "20000000"; //placeholder
+        string MurrayBaseNTSC = "202F7900";
+        string MurrayBaseNTSCJ = "20000000"; //placeholder
+        string MurrayBaseNTSCK = "20000000"; //placeholder
+        string MurrayBaseMar17 = "20000000"; //placeholder
+        string MurrayBaseJul12 = "20000000"; //placeholder
 
         public string currentSelectedStruct;
         public string activeStruct;
@@ -235,22 +178,6 @@ namespace syhax
             public const string entityAnim = ",0x200021F8"; //animation state
         }
 
-        public static class GUIStruct
-        {
-            public const string guiActivate = ",0x20000064"; //Activate
-            public const string guiHPos = ",0x2000009C"; //Horizontal Position
-            public const string guiVPos = ",0x200000A0"; //Vertical Position
-        }
-
-        public string currentSelectedGUI;
-        public int guiState;
-
-        public static class GuardAOB
-        {
-            public const string swarmer = "?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 46 4B 24 58 6E 70 63 5F 73 77 61 72 6D 65 72 5F";
-            public const string moose = "?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 46 4B 24 58 6E 70 63 5F 6D 6F 6F 73 65 5F 67 75 61 72 64";
-        }
-
         bool toggleEntFreezeX;
         bool toggleEntFreezeY;
         bool toggleEntFreezeZ;
@@ -261,8 +188,6 @@ namespace syhax
 
         bool toggleInfGadget;
         bool toggleWeed;
-
-        public string mooseScan;
 
         bool foundCRC = false;
 
@@ -283,24 +208,24 @@ namespace syhax
         }
 
         public string reloadFunc;
-        string botReloadFuncPAL = "0x203E8880";
-        string botReloadFuncNTSC = "0x203E1080";
+        string ReloadFuncPAL = "0x203E8880";
+        string ReloadFuncNTSC = "0x203E1080";
 
         public string guardSize;
-        string botGuardSizePAL = "0x203E9270";
-        string botGuardSizeNTSC = "0x203E1A70";
+        string GuardSizePAL = "0x203E9270";
+        string GuardSizeNTSC = "0x203E1A70";
 
         public string resetCam;
-        string botResetCamPAL = "0x202E5640";
-        string botResetCamNTSC = "0x202DE240";
+        string ResetCamPAL = "0x202E5640";
+        string ResetCamNTSC = "0x202DE240";
 
         public string reloadAOB;
-        string botReloadAOBPAL = "0x203E8888";
-        string botReloadAOBNTSC = "0x203E1088";
+        string ReloadAOBPAL = "0x203E8888";
+        string ReloadAOBNTSC = "0x203E1088";
 
         public string mapID;
-        string botMapIDPAL = "0x203E8910";
-        string botMapIDNTSC = "0x203E1110";
+        string MapIDPAL = "0x203E8910";
+        string MapIDNTSC = "0x203E1110";
 
         // Episode 0
         public string mapCairo;
@@ -330,7 +255,7 @@ namespace syhax
 
         // Episode 3
         public string mapIndia2;
-        public string mapSpiceBottom;
+        public string mapSpicetom;
         public string mapSpiceTop;
         public string mapSpice;
         public string mapRajan;
@@ -512,12 +437,12 @@ namespace syhax
             public const string india2Mar17 = "46 4B 24 5A 69 5F 74 65 6D 70 6C 65 5F 65 78 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 71 01 00 00 FF FF FF FF 46 4B 24 5A 69 5F 74 65 6D 70 6C 65 5F 65 78 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00";
             public const string india2Jul12 = "";
 
-            public const string spiceBottomPAL = "25 8E 07 00 DC 4D 79 00 5F 00 03 00 04 00 00 00 02 00 05 00 09 00 00 00 06 00 03 00 00 00 00 00 00 00 7F 66 00 7F 00 00 08 42 CD CC 2C 42 66 86 BC 43 01 01 E5 02 00 00 07 00 03 00 00 00 00 00 8E 01 00 00 FF FF FF FF 25 8E 07 00 DC 4D 79 00 5F 00 03 00 04 00 00 00 02 00 05 00 09 00 00 00 06 00 03 00 00 00 00 00 00 00 7F 66 00 7F 00 00 08 42 CD CC 2C 42 66 86 BC 43 01 01 E5 02 00 00 07 00 03 00 00 00 00 00";
-            public const string spiceBottomNTSC = "86 37 07 40 56 5F F6 00 40 20 00 33 00 01 00 00 00 0D 00 01 00 01 00 00 00 01 00 04 00 02 01 00 33 4C 66 80 00 61 F0 20 00 33 4C 66 80 00 61 F0 E0 FF 33 4C 66 80 00 40 1A 20 00 33 4C 66 80 00 8E 01 00 00 FF FF FF FF 86 37 07 40 56 5F F6 00 40 20 00 33 00 01 00 00 00 0D 00 01 00 01 00 00 00 01 00 04 00 02 01 00 33 4C 66 80 00 61 F0 20 00 33 4C 66 80 00 61 F0 E0 FF 33 4C 66 80 00 40 1A 20 00 33 4C 66 80 00";
-            public const string spiceBottomNTSCJ = "";
-            public const string spiceBottomNTSCK = "";
-            public const string spiceBottomMar17 = "46 4B 24 5A 69 5F 74 65 6D 70 6C 65 5F 69 6E 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 71 01 00 00 FF FF FF FF 46 4B 24 5A 69 5F 74 65 6D 70 6C 65 5F 69 6E 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00";
-            public const string spiceBottomJul12 = "";
+            public const string spicetomPAL = "25 8E 07 00 DC 4D 79 00 5F 00 03 00 04 00 00 00 02 00 05 00 09 00 00 00 06 00 03 00 00 00 00 00 00 00 7F 66 00 7F 00 00 08 42 CD CC 2C 42 66 86 BC 43 01 01 E5 02 00 00 07 00 03 00 00 00 00 00 8E 01 00 00 FF FF FF FF 25 8E 07 00 DC 4D 79 00 5F 00 03 00 04 00 00 00 02 00 05 00 09 00 00 00 06 00 03 00 00 00 00 00 00 00 7F 66 00 7F 00 00 08 42 CD CC 2C 42 66 86 BC 43 01 01 E5 02 00 00 07 00 03 00 00 00 00 00";
+            public const string spicetomNTSC = "86 37 07 40 56 5F F6 00 40 20 00 33 00 01 00 00 00 0D 00 01 00 01 00 00 00 01 00 04 00 02 01 00 33 4C 66 80 00 61 F0 20 00 33 4C 66 80 00 61 F0 E0 FF 33 4C 66 80 00 40 1A 20 00 33 4C 66 80 00 8E 01 00 00 FF FF FF FF 86 37 07 40 56 5F F6 00 40 20 00 33 00 01 00 00 00 0D 00 01 00 01 00 00 00 01 00 04 00 02 01 00 33 4C 66 80 00 61 F0 20 00 33 4C 66 80 00 61 F0 E0 FF 33 4C 66 80 00 40 1A 20 00 33 4C 66 80 00";
+            public const string spicetomNTSCJ = "";
+            public const string spicetomNTSCK = "";
+            public const string spicetomMar17 = "46 4B 24 5A 69 5F 74 65 6D 70 6C 65 5F 69 6E 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 71 01 00 00 FF FF FF FF 46 4B 24 5A 69 5F 74 65 6D 70 6C 65 5F 69 6E 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00";
+            public const string spicetomJul12 = "";
 
             public const string spiceTopPAL = "25 8E 07 00 DC 4D 79 00 5F 00 03 00 04 00 00 00 02 00 05 00 09 00 00 00 06 00 03 00 00 00 00 00 00 00 7F 66 00 7F 00 00 08 42 CD CC 2C 42 66 86 BC 43 01 01 E5 02 00 00 07 00 03 00 00 00 00 00 8F 01 00 00 FF FF FF FF 25 8E 07 00 DC 4D 79 00 5F 00 03 00 04 00 00 00 02 00 05 00 09 00 00 00 06 00 03 00 00 00 00 00 00 00 7F 66 00 7F 00 00 08 42 CD CC 2C 42 66 86 BC 43 01 01 E5 02 00 00 07 00 03 00 00 00 00 00";
             public const string spiceTopNTSC = "86 37 07 40 56 5F F6 00 40 20 00 33 00 01 00 00 00 0D 00 01 00 01 00 00 00 01 00 04 00 02 01 00 33 4C 66 80 00 61 F0 20 00 33 4C 66 80 00 61 F0 E0 FF 33 4C 66 80 00 40 1A 20 00 33 4C 66 80 00 8F 01 00 00 FF FF FF FF 86 37 07 40 56 5F F6 00 40 20 00 33 00 01 00 00 00 0D 00 01 00 01 00 00 00 01 00 04 00 02 01 00 33 4C 66 80 00 61 F0 20 00 33 4C 66 80 00 61 F0 E0 FF 33 4C 66 80 00 40 1A 20 00 33 4C 66 80 00";
@@ -762,7 +687,7 @@ namespace syhax
                 labelAttached.Invoke((MethodInvoker)delegate
                 {
                     labelAttached.Text = "NOT ATTACHED";
-                    labelAttached.ForeColor = Color.Red;
+                    labelAttached.ForeColor = Color.DarkRed;
                 });
             } //attach label
 
@@ -775,7 +700,7 @@ namespace syhax
                     labelAttached.Invoke((MethodInvoker)delegate
                     {
                         labelAttached.Text = "ATTACHED";
-                        labelAttached.ForeColor = Color.Green;
+                        labelAttached.ForeColor = Color.LightGreen;
                     }); //attach label
 
                     if (gameCRC.Length > 6)
@@ -788,47 +713,35 @@ namespace syhax
                         currentGame.Invoke((MethodInvoker)delegate
                         {
                             currentGame.Text = "Sly 2: Band of Thieves (PAL) " + "[" + gameCRC + "]";
-                            currentGame.ForeColor = Color.Green;
+                            currentGame.ForeColor = Color.LightGreen;
 
                             gameClock = clockPAL;
 
-                            slyGadget = botSlyGadgetPAL;
-                            bentleyGadget = botBentleyGadgetPAL;
-                            murrayGadget = botMurrayGadgetPAL;
+                            slyGadget = SlyGadgetPAL;
+                            bentleyGadget = BentleyGadgetPAL;
+                            murrayGadget = MurrayGadgetPAL;
 
-                            unlockGadgets1 = botUnlockGadgets1PAL;
-                            unlockGadgets2 = botUnlockGadgets2PAL;
+                            unlockGadgets1 = UnlockGadgets1PAL;
+                            unlockGadgets2 = UnlockGadgets2PAL;
 
-                            disableGuardAI = botDisableGuardAIPAL;
+                            disableGuardAI = DisableGuardAIPAL;
 
-                            resetCam = botResetCamPAL;
+                            resetCam = ResetCamPAL;
 
-                            charIDAddr = botCharIDPAL;
-                            actStructBase = botActBasePAL;
-                            slyStructBase = botSlyBasePAL;
-                            bentleyStructBase = botBentleyBasePAL;
-                            murrayStructBase = botMurrayBasePAL;
-                            neylaStructBase = botNeylaBasePAL;
-                            dimitriStructBase = botDimitriBasePAL;
-                            carmStructBase = botCarmBasePAL;
+                            guardSize = GuardSizePAL;
+                            charIDAddr = CharIDPAL;
+                            actStructBase = ActBasePAL;
+                            slyStructBase = SlyBasePAL;
+                            bentleyStructBase = BentleyBasePAL;
+                            murrayStructBase = MurrayBasePAL;
 
-                            gangHPGUI = botGangHPGUIPAL;
-                            coinGUI = botCoinGUIPAL;
-                            bottleGUI = botBottleGUIPAL;
-                            ejectGUI = botEjectGUIPAL;
-                            blackbarsGUI = botBlackbarsGUIPAL;
-                            infoboxGUI = botInfoboxGUIPAL;
-                            slymaskGUI = botSlyMaskGUIPAL;
-                            failGUI = botFailGUIPAL;
-                            //thiefNetGUI = botThiefNetGUIPAL;
+                            slyHP = SlyHPPAL;
+                            bentleyHP = BentleyHPPAL;
+                            murrayHP = MurrayHPPAL;
 
-                            slyHP = botSlyHPPAL;
-                            bentleyHP = botBentleyHPPAL;
-                            murrayHP = botMurrayHPPAL;
-
-                            reloadAOB = botReloadAOBPAL;
-                            reloadFunc = botReloadFuncPAL;
-                            mapID = botMapIDPAL;
+                            reloadAOB = ReloadAOBPAL;
+                            reloadFunc = ReloadFuncPAL;
+                            mapID = MapIDPAL;
 
                             mapCairo = LevelAOB.cairoPAL; //Maps
                             mapMenu = LevelAOB.menuPAL;
@@ -849,7 +762,7 @@ namespace syhax
                             mapBasement = LevelAOB.basementPAL;
                             mapBalls = LevelAOB.ballsPAL;
                             mapIndia2 = LevelAOB.india2PAL;
-                            mapSpiceBottom = LevelAOB.spiceBottomPAL;
+                            mapSpicetom = LevelAOB.spicetomPAL;
                             mapSpiceTop = LevelAOB.spiceTopPAL;
                             mapSpice = LevelAOB.spicePAL;
                             mapRajan = LevelAOB.rajanPAL;
@@ -885,51 +798,40 @@ namespace syhax
                             mapEngine3 = LevelAOB.engine3PAL;
                             mapParisFinale = LevelAOB.parisFinalePAL;
 
+
                         });
                     }
-                    if (gameCRC == Sly2CRC.Sly2NTSC)
+                    else if (gameCRC == Sly2CRC.Sly2NTSC)
                     {
                         currentGame.Invoke((MethodInvoker)delegate
                         {
                             currentGame.Text = "Sly 2: Band of Thieves (NTSC-U) " + "[" + gameCRC + "]";
-                            currentGame.ForeColor = Color.Green;
+                            currentGame.ForeColor = Color.LightGreen;
 
                             gameClock = clockNTSC; //Clock
-                            slyGadget = botSlyGadgetNTSC; //Gadgets
-                            bentleyGadget = botBentleyGadgetNTSC;
-                            murrayGadget = botMurrayGadgetNTSC;
-                            unlockGadgets1 = botUnlockGadgets1NTSC;
-                            unlockGadgets2 = botUnlockGadgets2NTSC;
-                            disableGuardAI = botDisableGuardAINTSC; //Guards
-                            guardSize = botGuardSizeNTSC;
+                            slyGadget = SlyGadgetNTSC; //Gadgets
+                            bentleyGadget = BentleyGadgetNTSC;
+                            murrayGadget = MurrayGadgetNTSC;
+                            unlockGadgets1 = UnlockGadgets1NTSC;
+                            unlockGadgets2 = UnlockGadgets2NTSC;
+                            disableGuardAI = DisableGuardAINTSC; //Guards
+                            guardSize = GuardSizeNTSC;
                             indicatorL2 = L2NTSC; //Indicators
                             indicatorR2 = R2NTSC;
-                            toggleBattleMus = botBattleMusNTSC; //Music
-                            toggleSneakMus = botSneakMusNTSC;
-                            charIDAddr = botCharIDNTSC; //Structs
-                            resetCam = botResetCamNTSC;
-                            actStructBase = botActBaseNTSC;
-                            slyStructBase = botSlyBaseNTSC;
-                            bentleyStructBase = botBentleyBaseNTSC;
-                            murrayStructBase = botMurrayBaseNTSC;
-                            neylaStructBase = botNeylaBaseNTSC;
-                            dimitriStructBase = botDimitriBaseNTSC;
-                            carmStructBase = botCarmBaseNTSC;
-                            gangHPGUI = botGangHPGUINTSC; //GUI
-                            //coinGUI = botCoinGUINTSC;
-                            bottleGUI = botBottleGUINTSC;
-                            //ejectGUI = botEjectGUINTSC;
-                            blackbarsGUI = botBlackbarsGUINTSC;
-                            infoboxGUI = botInfoboxGUINTSC;
-                            //slymaskGUI = botSlyMaskGUINTSC;
-                            failGUI = botFailGUINTSC;
-                            thiefNetGUI = botThiefNetGUINTSC;
-                            slyHP = botSlyHPNTSC; //Health
-                            bentleyHP = botBentleyHPNTSC;
-                            murrayHP = botMurrayHPNTSC;
-                            reloadAOB = botReloadAOBNTSC; //Map loading
-                            reloadFunc = botReloadFuncNTSC;
-                            mapID = botMapIDNTSC;
+                            toggleBattleMus = BattleMusNTSC; //Music
+                            toggleSneakMus = SneakMusNTSC;
+                            charIDAddr = CharIDNTSC; //Structs
+                            resetCam = ResetCamNTSC;
+                            actStructBase = ActBaseNTSC;
+                            slyStructBase = SlyBaseNTSC;
+                            bentleyStructBase = BentleyBaseNTSC;
+                            murrayStructBase = MurrayBaseNTSC;
+                            slyHP = SlyHPNTSC; //Health
+                            bentleyHP = BentleyHPNTSC;
+                            murrayHP = MurrayHPNTSC;
+                            reloadAOB = ReloadAOBNTSC; //Map loading
+                            reloadFunc = ReloadFuncNTSC;
+                            mapID = MapIDNTSC;
                             mapCairo = LevelAOB.cairoNTSC; //Maps
                             mapMenu = LevelAOB.menuNTSC;
                             mapParis = LevelAOB.parisNTSC;
@@ -949,7 +851,7 @@ namespace syhax
                             mapBasement = LevelAOB.basementNTSC;
                             mapBalls = LevelAOB.ballsNTSC;
                             mapIndia2 = LevelAOB.india2NTSC;
-                            mapSpiceBottom = LevelAOB.spiceBottomNTSC;
+                            mapSpicetom = LevelAOB.spicetomNTSC;
                             mapSpiceTop = LevelAOB.spiceTopNTSC;
                             mapSpice = LevelAOB.spiceNTSC;
                             mapRajan = LevelAOB.rajanNTSC;
@@ -990,28 +892,25 @@ namespace syhax
                             mapParisFinale = LevelAOB.parisFinaleNTSC;
                         });
                     }
-                    if (gameCRC == Sly2CRC.Sly2NTSCJ)
+                    else if (gameCRC == Sly2CRC.Sly2NTSCJ)
                     {
                         currentGame.Invoke((MethodInvoker)delegate
                         {
                             currentGame.Text = "Sly 2: Band of Thieves (NTSC-J) " + "[" + gameCRC + "]";
-                            currentGame.ForeColor = Color.Green;
+                            currentGame.ForeColor = Color.LightGreen;
 
-                            unlockGadgets1 = botUnlockGadgets1NTSCJ;
-                            unlockGadgets2 = botUnlockGadgets2NTSCJ;
+                            unlockGadgets1 = UnlockGadgets1NTSCJ;
+                            unlockGadgets2 = UnlockGadgets2NTSCJ;
 
-                            charIDAddr = botCharIDNTSCJ;
-                            actStructBase = botActBaseNTSCJ;
-                            slyStructBase = botSlyBaseNTSCJ;
-                            bentleyStructBase = botBentleyBaseNTSCJ;
-                            murrayStructBase = botMurrayBaseNTSCJ;
-                            neylaStructBase = botNeylaBaseNTSCJ;
-                            dimitriStructBase = botDimitriBaseNTSCJ;
-                            carmStructBase = botCarmBaseNTSCJ;
+                            charIDAddr = CharIDNTSCJ;
+                            actStructBase = ActBaseNTSCJ;
+                            slyStructBase = SlyBaseNTSCJ;
+                            bentleyStructBase = BentleyBaseNTSCJ;
+                            murrayStructBase = MurrayBaseNTSCJ;
 
-                            slyHP = botSlyHPNTSCJ; //Health
-                            bentleyHP = botBentleyHPNTSCJ;
-                            murrayHP = botMurrayHPNTSCJ;
+                            slyHP = SlyHPNTSCJ; //Health
+                            bentleyHP = BentleyHPNTSCJ;
+                            murrayHP = MurrayHPNTSCJ;
 
                             mapCairo = LevelAOB.cairoNTSCJ; //Maps
                             mapMenu = LevelAOB.menuNTSCJ;
@@ -1032,7 +931,7 @@ namespace syhax
                             mapBasement = LevelAOB.basementNTSCJ;
                             mapBalls = LevelAOB.ballsNTSCJ;
                             mapIndia2 = LevelAOB.india2NTSCJ;
-                            mapSpiceBottom = LevelAOB.spiceBottomNTSCJ;
+                            mapSpicetom = LevelAOB.spicetomNTSCJ;
                             mapSpiceTop = LevelAOB.spiceTopNTSCJ;
                             mapSpice = LevelAOB.spiceNTSCJ;
                             mapRajan = LevelAOB.rajanNTSCJ;
@@ -1069,23 +968,20 @@ namespace syhax
                             mapParisFinale = LevelAOB.parisFinaleNTSCJ;
                         });
                     }
-                    if (gameCRC == Sly2CRC.Sly2NTSCK)
+                    else if (gameCRC == Sly2CRC.Sly2NTSCK)
                     {
                         currentGame.Invoke((MethodInvoker)delegate
                         {
                             currentGame.Text = "Sly 2: Band of Thieves (NTSC-K) " + "[" + gameCRC + "]";
-                            currentGame.ForeColor = Color.Green;
+                            currentGame.ForeColor = Color.LightGreen;
 
-                            charIDAddr = botCharIDNTSCK;
-                            actStructBase = botActBaseNTSCK;
-                            slyStructBase = botSlyBaseNTSCK;
-                            bentleyStructBase = botBentleyBaseNTSCK;
-                            murrayStructBase = botMurrayBaseNTSCK;
-                            neylaStructBase = botNeylaBaseNTSCK;
-                            dimitriStructBase = botDimitriBaseNTSCK;
-                            carmStructBase = botCarmBaseNTSCK;
+                            charIDAddr = CharIDNTSCK;
+                            actStructBase = ActBaseNTSCK;
+                            slyStructBase = SlyBaseNTSCK;
+                            bentleyStructBase = BentleyBaseNTSCK;
+                            murrayStructBase = MurrayBaseNTSCK;
 
-                            slyHP = botSlyHPNTSCK; //Health
+                            slyHP = SlyHPNTSCK; //Health
 
                             mapCairo = LevelAOB.cairoNTSCK; //Maps
                             mapMenu = LevelAOB.menuNTSCK;
@@ -1106,7 +1002,7 @@ namespace syhax
                             mapBasement = LevelAOB.basementNTSCK;
                             mapBalls = LevelAOB.ballsNTSCK;
                             mapIndia2 = LevelAOB.india2NTSCK;
-                            mapSpiceBottom = LevelAOB.spiceBottomNTSCK;
+                            mapSpicetom = LevelAOB.spicetomNTSCK;
                             mapSpiceTop = LevelAOB.spiceTopNTSCK;
                             mapSpice = LevelAOB.spiceNTSCK;
                             mapRajan = LevelAOB.rajanNTSCK;
@@ -1143,21 +1039,18 @@ namespace syhax
                             mapParisFinale = LevelAOB.parisFinaleNTSCK;
                         });
                     }
-                    if (gameCRC == Sly2CRC.Sly2Mar17)
+                    else if (gameCRC == Sly2CRC.Sly2Mar17)
                     {
                         currentGame.Invoke((MethodInvoker)delegate
                         {
                             currentGame.Text = "Sly 2: Band of Thieves (March 17 Prototype) " + "[" + gameCRC + "]";
-                            currentGame.ForeColor = Color.Green;
+                            currentGame.ForeColor = Color.LightGreen;
 
-                            charIDAddr = botCharIDMar17;
-                            actStructBase = botActBaseMar17;
-                            slyStructBase = botSlyBaseMar17;
-                            bentleyStructBase = botBentleyBaseMar17;
-                            murrayStructBase = botMurrayBaseMar17;
-                            neylaStructBase = botNeylaBaseMar17;
-                            dimitriStructBase = botDimitriBaseMar17;
-                            carmStructBase = botCarmBaseMar17;
+                            charIDAddr = CharIDMar17;
+                            actStructBase = ActBaseMar17;
+                            slyStructBase = SlyBaseMar17;
+                            bentleyStructBase = BentleyBaseMar17;
+                            murrayStructBase = MurrayBaseMar17;
 
                             mapMenu = LevelAOB.menuMar17; //Maps
                             mapParis = LevelAOB.parisMar17;
@@ -1177,27 +1070,24 @@ namespace syhax
                             mapBasement = LevelAOB.basementMar17;
                             mapBalls = LevelAOB.ballsMar17;
                             mapIndia2 = LevelAOB.india2Mar17;
-                            mapSpiceBottom = LevelAOB.spiceBottomMar17;
+                            mapSpicetom = LevelAOB.spicetomMar17;
                             mapSpiceTop = LevelAOB.spiceTopMar17;
                             mapSpice = LevelAOB.spiceMar17;
                             mapRajan = LevelAOB.rajanMar17;
                         });
                     }
-                    if (gameCRC == Sly2CRC.Sly2Jul12)
+                    else if (gameCRC == Sly2CRC.Sly2Jul12)
                     {
                         currentGame.Invoke((MethodInvoker)delegate
                         {
                             currentGame.Text = "Sly 2: Band of Thieves (July 12 Prototype) " + "[" + gameCRC + "]";
-                            currentGame.ForeColor = Color.Green;
+                            currentGame.ForeColor = Color.LightGreen;
 
-                            charIDAddr = botCharIDJul12;
-                            actStructBase = botActBaseJul12;
-                            slyStructBase = botSlyBaseJul12;
-                            bentleyStructBase = botBentleyBaseJul12;
-                            murrayStructBase = botMurrayBaseJul12;
-                            neylaStructBase = botNeylaBaseJul12;
-                            dimitriStructBase = botDimitriBaseJul12;
-                            carmStructBase = botCarmBaseJul12;
+                            charIDAddr = CharIDJul12;
+                            actStructBase = ActBaseJul12;
+                            slyStructBase = SlyBaseJul12;
+                            bentleyStructBase = BentleyBaseJul12;
+                            murrayStructBase = MurrayBaseJul12;
 
                             mapCairo = LevelAOB.cairoJul12; //Maps
                             mapParis = LevelAOB.parisJul12;
@@ -1216,7 +1106,7 @@ namespace syhax
                             mapBasement = LevelAOB.basementJul12;
                             mapBalls = LevelAOB.ballsJul12;
                             mapIndia2 = LevelAOB.india2Jul12;
-                            mapSpiceBottom = LevelAOB.spiceBottomJul12;
+                            mapSpicetom = LevelAOB.spicetomJul12;
                             mapSpiceTop = LevelAOB.spiceTopJul12;
                             mapSpice = LevelAOB.spiceJul12;
                             mapRajan = LevelAOB.rajanJul12;
@@ -1248,51 +1138,37 @@ namespace syhax
                         });
                     }
 
+                    if (gameCRC != Sly2CRC.Sly2PAL)
+                    {
+                        langSelector.Enabled = false;
+                        reloadLang.Enabled = false;
+                        currentLang.Invoke((MethodInvoker)delegate
+                        {
+                            currentLang.Text = "PAL only!";
+                            currentLang.ForeColor = Color.DarkRed;
+                            currentLang.Font = new Font("Consolas", 14, FontStyle.Bold | FontStyle.Italic);
+                        });
+                    }
                     if (gameCRC != Sly2CRC.Sly2PAL && gameCRC != Sly2CRC.Sly2NTSC && gameCRC != Sly2CRC.Sly2NTSCJ && gameCRC != Sly2CRC.Sly2NTSCK && gameCRC != Sly2CRC.Sly2Mar17 && gameCRC != Sly2CRC.Sly2Jul12)
                     {
                         Application.Restart();
                     }
-
                     if (foundCRC && gameCRC == "0")
                     {
                         Application.Restart();
                     }
 
-                    actChar.Invoke((MethodInvoker)delegate
-                    {
-                        actCharIndex = m.ReadByte(actStructBase + EntityStruct.entityID);
-                        if (actCharIndex == 7)
-                        {
-                            actChar.Text = "Sly";
-                            actChar.ForeColor = ColorTranslator.FromHtml("#4683B5");
-                            activeStruct = slyStructBase;
-                        }
-                        else if (actCharIndex == 8)
-                        {
-                            actChar.Text = "Bentley";
-                            actChar.ForeColor = ColorTranslator.FromHtml("#40B369");
-                            activeStruct = bentleyStructBase;
-                        }
-                        else if (actCharIndex == 9)
-                        {
-                            actChar.Text = "Murray";
-                            actChar.ForeColor = ColorTranslator.FromHtml("#A25F89");
-                            activeStruct = murrayStructBase;
-                        }
-                        else if (actCharIndex == 0)
-                        {
-                            actChar.Text = "???";
-                            actChar.ForeColor = Color.White;
-                        }
-                    }); //active character text + color
-
                     if (currentTab == 0)
                     {
-                        float actConvertX;
-                        float actConvertY;
-                        float actConvertZ;
-                        while (currentTab == 0)
+
+                        actChar.Invoke((MethodInvoker)delegate
                         {
+
+
+                            float actConvertX;
+                            float actConvertY;
+                            float actConvertZ;
+
                             slyHPAmount = m.ReadInt(slyHP).ToString();
                             bentleyHPAmount = m.ReadInt(bentleyHP).ToString();
                             murrayHPAmount = m.ReadInt(murrayHP).ToString();
@@ -1306,32 +1182,300 @@ namespace syhax
                             actConvertZ = m.ReadFloat(actStructBase + TransformOffset.coordOffsetZ, round: false);
                             DelegateThisShit(actEntZ, actConvertZ);
 
+                            actCharIndex = m.ReadByte(actStructBase + EntityStruct.entityID);
+
                             if (actCharIndex == 7)
                             {
+                                actChar.Text = "Sly";
+                                actChar.ForeColor = Color.SkyBlue;
+                                activeStruct = slyStructBase;
                                 DelgeateThisShit(actHealth, slyHPAmount);
                             }
-                            else if (actCharIndex == 8)
+                            if (actCharIndex == 8)
                             {
+                                actChar.Text = "Bentley";
+                                actChar.ForeColor = Color.LightGreen;
+                                activeStruct = bentleyStructBase;
                                 DelgeateThisShit(actHealth, bentleyHPAmount);
                             }
-                            else if (actCharIndex == 9)
+                            if (actCharIndex == 9)
                             {
+                                actChar.Text = "Murray";
+                                actChar.ForeColor = Color.Pink;
+                                activeStruct = murrayStructBase;
                                 DelgeateThisShit(actHealth, murrayHPAmount);
                             }
-                            else if (actCharIndex < 7)
+
+                            if (actCharIndex != 7 && actCharIndex != 8 && actCharIndex != 9)
                             {
+                                actChar.Text = "???";
+                                actChar.ForeColor = Color.White;
+                                actEntIncreaseX.Enabled = false;
+                                actEntIncreaseY.Enabled = false;
+                                actEntIncreaseZ.Enabled = false;
+                                actEntDecreaseX.Enabled = false;
+                                actEntDecreaseY.Enabled = false;
+                                actEntDecreaseZ.Enabled = false;
+                                actEntFreezeX.Enabled = false;
+                                actEntFreezeY.Enabled = false;
+                                actEntFreezeZ.Enabled = false;
+                                actHPIncrease.Enabled = false;
+                                actHPDecrease.Enabled = false;
+                                actHPFreeze.Enabled = false;
                                 DelgeateThisShit(actHealth, "???");
                             }
-                            Thread.Sleep(100);
-                        }
-                    } //Active character tab
+                            else
+                            {
+                                actEntIncreaseX.Enabled = true;
+                                actEntIncreaseY.Enabled = true;
+                                actEntIncreaseZ.Enabled = true;
+                                actEntDecreaseX.Enabled = true;
+                                actEntDecreaseY.Enabled = true;
+                                actEntDecreaseZ.Enabled = true;
+                                actEntFreezeX.Enabled = true;
+                                actEntFreezeY.Enabled = true;
+                                actEntFreezeZ.Enabled = true;
+                                actHPIncrease.Enabled = true;
+                                actHPDecrease.Enabled = true;
+                                actHPFreeze.Enabled = true;
+                            }
+                        }); //active character text + color
 
-                    if (currentTab == 2)
+                        Thread.Sleep(10);
+                    } //Active character tab
+                    else if (currentTab == 1)
+                    {
+                        warpComboBox.Invoke((MethodInvoker)delegate
+                        {
+                            if (currentMapIndex == 0) // Cairo
+                            {
+                                if (warpComboBox.Items.Count != 7)
+                                {
+                                    warpComboBox.Items.Add("Start");
+                                    warpComboBox.Items.Add("Balcony 1");
+                                    warpComboBox.Items.Add("Cobra");
+                                    warpComboBox.Items.Add("Rendezvous Point");
+                                    warpComboBox.Items.Add("Carmelita Chase");
+                                    warpComboBox.Items.Add("Balcony 2");
+                                    warpComboBox.Items.Add("Finish");
+                                }
+                            }
+                            else if (currentMapIndex == 1) // Main Menu
+                            {
+                                if (warpComboBox.Items.Count != 1)
+                                {
+                                    warpComboBox.Items.Add("No warps available for this level");
+                                    warpComboBox.SelectedItem = "No warps available for this level";
+                                    warpButton.Enabled = false;
+                                    warpComboBox.Enabled = false;
+                                }
+                            }
+                            else if (currentMapIndex == 2) // Paris
+                            {
+                                if (warpComboBox.Items.Count != 7)
+                                {
+                                    warpComboBox.Items.Add("Start");
+                                    warpComboBox.Items.Add("Balcony 1");
+                                    warpComboBox.Items.Add("Cobra");
+                                    warpComboBox.Items.Add("Rendezvous Point");
+                                    warpComboBox.Items.Add("Carmelita Chase");
+                                    warpComboBox.Items.Add("Balcony 2");
+                                    warpComboBox.Items.Add("Finish");
+                                }
+                            }
+                        });
+                        currentMap.Invoke((MethodInvoker)delegate
+                        {
+                            currentMapIndex = m.ReadByte(mapID);
+
+                            if (currentMapIndex == 0)
+                            {
+                                currentMap.Text = "Cairo";
+                            }
+                            else if (currentMapIndex == 1)
+                            {
+                                currentMap.Text = "Main Menu";
+                            }
+                            else if (currentMapIndex == 2)
+                            {
+                                currentMap.Text = "Paris Hub";
+                            }
+                            else if (currentMapIndex == 3)
+                            {
+                                currentMap.Text = "Wine Cellar";
+                            }
+                            else if (currentMapIndex == 4)
+                            {
+                                currentMap.Text = "Nightclub";
+                            }
+                            else if (currentMapIndex == 5)
+                            {
+                                currentMap.Text = "Print Room";
+                            }
+                            else if (currentMapIndex == 6)
+                            {
+                                currentMap.Text = "Theater";
+                            }
+                            else if (currentMapIndex == 7)
+                            {
+                                currentMap.Text = "Pump Room";
+                            }
+                            else if (currentMapIndex == 8)
+                            {
+                                currentMap.Text = "India Hub";
+                            }
+                            else if (currentMapIndex == 9)
+                            {
+                                currentMap.Text = "Hotel";
+                            }
+                            else if (currentMapIndex == 10)
+                            {
+                                currentMap.Text = "Palace Basement";
+                            }
+                            else if (currentMapIndex == 11)
+                            {
+                                currentMap.Text = "Ballroom";
+                            }
+                            else if (currentMapIndex == 12)
+                            {
+                                currentMap.Text = "India 2 Hub";
+                            }
+                            else if (currentMapIndex == 13)
+                            {
+                                currentMap.Text = "Spice Grinder";
+                            }
+                            else if (currentMapIndex == 14)
+                            {
+                                currentMap.Text = "Prague Hub";
+                            }
+                            else if (currentMapIndex == 15)
+                            {
+                                currentMap.Text = "Prison";
+                            }
+                            else if (currentMapIndex == 16)
+                            {
+                                currentMap.Text = "Vault Room";
+                            }
+                            else if (currentMapIndex == 17)
+                            {
+                                currentMap.Text = "Prague 2 Hub";
+                            }
+                            else if (currentMapIndex == 18)
+                            {
+                                currentMap.Text = "secret map wtf weed weed wewed weedddd cocaine";
+                            }
+                            else if (currentMapIndex == 19)
+                            {
+                                currentMap.Text = "Crypt 3 (Stealing Voices)";
+                            }
+                            else if (currentMapIndex == 20)
+                            {
+                                currentMap.Text = "Crypt 1/2 (Stealing Voices)";
+                            }
+                            else if (currentMapIndex == 21)
+                            {
+                                currentMap.Text = "Crypt (Ghost Capture)";
+                            }
+                            else if (currentMapIndex == 22)
+                            {
+                                currentMap.Text = "Re-education Tower / Crypt Hack";
+                            }
+                            else if (currentMapIndex == 23)
+                            {
+                                currentMap.Text = "Crypt 1 (Mojo Trap)";
+                            }
+                            else if (currentMapIndex == 24)
+                            {
+                                currentMap.Text = "Crypt 3 (Mojo Trap)";
+                            }
+                            else if (currentMapIndex == 25)
+                            {
+                                currentMap.Text = "Crypt 2 (Mojo Trap)";
+                            }
+                            else if (currentMapIndex == 26)
+                            {
+                                currentMap.Text = "Crypt 4 (Mojo Trap)";
+                            }
+                            else if (currentMapIndex == 27)
+                            {
+                                currentMap.Text = "Canada Hub";
+                            }
+                            else if (currentMapIndex == 28)
+                            {
+                                currentMap.Text = "Cabins";
+                            }
+                            else if (currentMapIndex == 29)
+                            {
+                                currentMap.Text = "Train (Aerial Assault)";
+                            }
+                            else if (currentMapIndex == 30)
+                            {
+                                currentMap.Text = "Train (Operation)";
+                            }
+                            else if (currentMapIndex == 31)
+                            {
+                                currentMap.Text = "Train (Ride The Iron Horse)";
+                            }
+                            else if (currentMapIndex == 32)
+                            {
+                                currentMap.Text = "Canada 2 Hub";
+                            }
+                            else if (currentMapIndex == 33)
+                            {
+                                currentMap.Text = "RC Combat Club";
+                            }
+                            else if (currentMapIndex == 34)
+                            {
+                                currentMap.Text = "Sawmill";
+                            }
+                            else if (currentMapIndex == 35)
+                            {
+                                currentMap.Text = "Lighthouse";
+                            }
+                            else if (currentMapIndex == 36)
+                            {
+                                currentMap.Text = "Bear Cave";
+                            }
+                            else if (currentMapIndex == 37)
+                            {
+                                currentMap.Text = "Sawmill (Bossfight)";
+                            }
+                            else if (currentMapIndex == 38)
+                            {
+                                currentMap.Text = "Blimp Hub";
+                            }
+                            else if (currentMapIndex == 39)
+                            {
+                                currentMap.Text = "Blimp Headquarters";
+                            }
+                            else if (currentMapIndex == 40)
+                            {
+                                currentMap.Text = "Engine Room 1";
+                            }
+                            else if (currentMapIndex == 41)
+                            {
+                                currentMap.Text = "Engine Room 2";
+                            }
+                            else if (currentMapIndex == 42)
+                            {
+                                currentMap.Text = "Engine Room 3";
+                            }
+                            else if (currentMapIndex == 43)
+                            {
+                                currentMap.Text = "Paris (Finale)";
+                            }
+                        });// level strings
+                    } //Engine tab
+                    else if (currentTab == 2)
+                    {
+
+                    } //Camera tab
+                    else if (currentTab == 3)
                     {
                         float convertX;
                         float convertY;
                         float convertZ;
-                        while (currentTab == 2)
+                        while (currentTab == 3)
                         {
                             if (targetEntity == "Sly")
                             {
@@ -1396,277 +1540,11 @@ namespace syhax
                                     entID.Text = m.ReadByte(murrayStructBase + EntityStruct.entityID).ToString();
                                 });
                             } // Murray Location
-                            else if (targetEntity == "Neyla")
-                            {
-                                convertX = m.ReadFloat(neylaStructBase + TransformOffset.coordOffsetX, round: false);
-                                DelegateThisShit(entX, convertX);
 
-                                convertY = m.ReadFloat(neylaStructBase + TransformOffset.coordOffsetY, round: false);
-                                DelegateThisShit(entY, convertY);
-
-                                convertZ = m.ReadFloat(neylaStructBase + TransformOffset.coordOffsetZ, round: false);
-                                DelegateThisShit(entZ, convertZ);
-
-                                entActTimer.Invoke((MethodInvoker)delegate
-                                {
-                                    entActTimer.Text = Math.Round(m.ReadFloat(neylaStructBase + EntityStruct.entityTimer, round: true)).ToString();
-                                });
-
-                                entID.Invoke((MethodInvoker)delegate
-                                {
-                                    entID.Text = m.ReadByte(neylaStructBase + EntityStruct.entityID).ToString();
-                                });
-                            } // Neyla Location
-                            else if (targetEntity == "Dimitri")
-                            {
-                                convertX = m.ReadFloat(dimitriStructBase + TransformOffset.coordOffsetX, round: false);
-                                DelegateThisShit(entX, convertX);
-
-                                convertY = m.ReadFloat(dimitriStructBase + TransformOffset.coordOffsetY, round: false);
-                                DelegateThisShit(entY, convertY);
-
-                                convertZ = m.ReadFloat(dimitriStructBase + TransformOffset.coordOffsetZ, round: false);
-                                DelegateThisShit(entZ, convertZ);
-
-                                entActTimer.Invoke((MethodInvoker)delegate
-                                {
-                                    entActTimer.Text = Math.Round(m.ReadFloat(dimitriStructBase + EntityStruct.entityTimer, round: true)).ToString();
-                                });
-
-                                entID.Invoke((MethodInvoker)delegate
-                                {
-                                    entID.Text = m.ReadByte(dimitriStructBase + EntityStruct.entityID).ToString();
-                                });
-                            } // Dimitri Location
-                            else if (targetEntity == "Carmelita")
-                            {
-                                convertX = m.ReadFloat(carmStructBase + TransformOffset.coordOffsetX, round: false);
-                                DelegateThisShit(entX, convertX);
-
-                                convertY = m.ReadFloat(carmStructBase + TransformOffset.coordOffsetY, round: false);
-                                DelegateThisShit(entY, convertY);
-
-                                convertZ = m.ReadFloat(carmStructBase + TransformOffset.coordOffsetZ, round: false);
-                                DelegateThisShit(entZ, convertZ);
-
-                                entActTimer.Invoke((MethodInvoker)delegate
-                                {
-                                    entActTimer.Text = Math.Round(m.ReadFloat(carmStructBase + EntityStruct.entityTimer, round: true)).ToString();
-                                });
-
-                                entID.Invoke((MethodInvoker)delegate
-                                {
-                                    entID.Text = m.ReadByte(carmStructBase + EntityStruct.entityID).ToString();
-                                });
-                            } // Carmelita Location
-                            Thread.Sleep(100);
+                            Thread.Sleep(10);
                         }
-                    }
-
-                    actHealth.Invoke((MethodInvoker)delegate
-                    {
-                        actCharIndex = m.ReadByte(actStructBase + EntityStruct.entityID);
-                        if (actCharIndex == 7)
-                        {
-
-                        }
-                    }); //active character health
-
-                    currentMap.Invoke((MethodInvoker)delegate
-                    {
-                        currentMapIndex = m.ReadByte(mapID);
-
-
-                        if (currentMapIndex == 0)
-                        {
-                            currentMap.Text = "Cairo";
-                        }
-                        else if (currentMapIndex == 1)
-                        {
-                            currentMap.Text = "Main Menu";
-                        }
-                        else if (currentMapIndex == 2)
-                        {
-                            currentMap.Text = "Paris Hub";
-                        }
-                        else if (currentMapIndex == 3)
-                        {
-                            currentMap.Text = "Wine Cellar";
-                        }
-                        else if (currentMapIndex == 4)
-                        {
-                            currentMap.Text = "Nightclub";
-                        }
-                        else if (currentMapIndex == 5)
-                        {
-                            currentMap.Text = "Print Room";
-                        }
-                        else if (currentMapIndex == 6)
-                        {
-                            currentMap.Text = "Theater";
-                        }
-                        else if (currentMapIndex == 7)
-                        {
-                            currentMap.Text = "Pump Room";
-                        }
-                        else if (currentMapIndex == 8)
-                        {
-                            currentMap.Text = "India Hub";
-                        }
-                        else if (currentMapIndex == 9)
-                        {
-                            currentMap.Text = "Hotel";
-                        }
-                        else if (currentMapIndex == 10)
-                        {
-                            currentMap.Text = "Palace Basement";
-                        }
-                        else if (currentMapIndex == 11)
-                        {
-                            currentMap.Text = "Ballroom";
-                        }
-                        else if (currentMapIndex == 12)
-                        {
-                            currentMap.Text = "India 2 Hub";
-                        }
-                        else if (currentMapIndex == 13)
-                        {
-                            currentMap.Text = "Spice Grinder";
-                        }
-                        else if (currentMapIndex == 14)
-                        {
-                            currentMap.Text = "Prague Hub";
-                        }
-                        else if (currentMapIndex == 15)
-                        {
-                            currentMap.Text = "Prison";
-                        }
-                        else if (currentMapIndex == 16)
-                        {
-                            currentMap.Text = "Vault Room";
-                        }
-                        else if (currentMapIndex == 17)
-                        {
-                            currentMap.Text = "Prague 2 Hub";
-                        }
-                        else if (currentMapIndex == 18)
-                        {
-                            currentMap.Text = "secret map wtf weed weed wewed weedddd cocaine";
-                        }
-                        else if (currentMapIndex == 19)
-                        {
-                            currentMap.Text = "Crypt 3 (Stealing Voices)";
-                        }
-                        else if (currentMapIndex == 20)
-                        {
-                            currentMap.Text = "Crypt 1/2 (Stealing Voices)";
-                        }
-                        else if (currentMapIndex == 21)
-                        {
-                            currentMap.Text = "Crypt (Ghost Capture)";
-                        }
-                        else if (currentMapIndex == 22)
-                        {
-                            currentMap.Text = "Re-education Tower / Crypt Hack";
-                        }
-                        else if (currentMapIndex == 23)
-                        {
-                            currentMap.Text = "Crypt 1 (Mojo Trap)";
-                        }
-                        else if (currentMapIndex == 24)
-                        {
-                            currentMap.Text = "Crypt 3 (Mojo Trap)";
-                        }
-                        else if (currentMapIndex == 25)
-                        {
-                            currentMap.Text = "Crypt 2 (Mojo Trap)";
-                        }
-                        else if (currentMapIndex == 26)
-                        {
-                            currentMap.Text = "Crypt 4 (Mojo Trap)";
-                        }
-                        else if (currentMapIndex == 27)
-                        {
-                            currentMap.Text = "Canada Hub";
-                        }
-                        else if (currentMapIndex == 28)
-                        {
-                            currentMap.Text = "Cabins";
-                        }
-                        else if (currentMapIndex == 29)
-                        {
-                            currentMap.Text = "Train (Aerial Assault)";
-                        }
-                        else if (currentMapIndex == 30)
-                        {
-                            currentMap.Text = "Train (Operation)";
-                        }
-                        else if (currentMapIndex == 31)
-                        {
-                            currentMap.Text = "Train (Ride The Iron Horse)";
-                        }
-                        else if (currentMapIndex == 32)
-                        {
-                            currentMap.Text = "Canada 2 Hub";
-                        }
-                        else if (currentMapIndex == 33)
-                        {
-                            currentMap.Text = "RC Combat Club";
-                        }
-                        else if (currentMapIndex == 34)
-                        {
-                            currentMap.Text = "Sawmill";
-                        }
-                        else if (currentMapIndex == 35)
-                        {
-                            currentMap.Text = "Lighthouse";
-                        }
-                        else if (currentMapIndex == 36)
-                        {
-                            currentMap.Text = "Bear Cave";
-                        }
-                        else if (currentMapIndex == 37)
-                        {
-                            currentMap.Text = "Sawmill (Bossfight)";
-                        }
-                        else if (currentMapIndex == 38)
-                        {
-                            currentMap.Text = "Blimp Hub";
-                        }
-                        else if (currentMapIndex == 39)
-                        {
-                            currentMap.Text = "Blimp Headquarters";
-                        }
-                        else if (currentMapIndex == 40)
-                        {
-                            currentMap.Text = "Engine Room 1";
-                        }
-                        else if (currentMapIndex == 41)
-                        {
-                            currentMap.Text = "Engine Room 2";
-                        }
-                        else if (currentMapIndex == 42)
-                        {
-                            currentMap.Text = "Engine Room 3";
-                        }
-                        else if (currentMapIndex == 43)
-                        {
-                            currentMap.Text = "Paris (Finale)";
-                        }
-                    }); // level strings
-
-                    if (gameCRC != Sly2CRC.Sly2PAL)
-                    {
-                        langSelector.Enabled = false;
-                        reloadLang.Enabled = false;
-                        currentLang.Invoke((MethodInvoker)delegate
-                        {
-                            currentLang.Text = "PAL only!";
-                            currentLang.ForeColor = Color.Red;
-                            currentLang.Font = new Font("Consolas", 14, FontStyle.Bold | FontStyle.Italic);
-                        });
-                    } // disable langselector for other regions
-                    else if (gameCRC == Sly2CRC.Sly2PAL)
+                    } //Entity tab
+                    else if (currentTab == 4)
                     {
                         currentLang.Invoke((MethodInvoker)delegate
                         {
@@ -1716,76 +1594,15 @@ namespace syhax
                                 currentLang.Text = "Svensk";
                             }
                         });
-                    } // language strings
-
-
-
-                    /* if (checkBoxFly.Checked)
-                    {
-                        float targetValue = 0F;
-                        int L2FlagIndicator = m.ReadByte(indicatorL2, "byte");
-                        int R2FlagIndicator = m.ReadByte(indicatorR2, "byte");
-
-                        while (L2FlagIndicator != 0x00)
-                        {
-                            actEntZ.Invoke((MethodInvoker)delegate
-                            {
-                                targetValue = float.Parse(actEntZ.Text) + xyzTrackBar.Value; //increment
-                            });
-                            ChangeActiveCoords("z", targetValue, activeStruct, TransformOffset.coordOffsetZ);
-                        }
-                    } */
-
-                    // Warps
-                    warpComboBox.Invoke((MethodInvoker)delegate
-                    {
-                        if (currentMapIndex == 0) // Cairo
-                        {
-                            if (warpComboBox.Items.Count != 7)
-                            {
-                                warpComboBox.Items.Add("Start");
-                                warpComboBox.Items.Add("Balcony 1");
-                                warpComboBox.Items.Add("Cobra");
-                                warpComboBox.Items.Add("Rendezvous Point");
-                                warpComboBox.Items.Add("Carmelita Chase");
-                                warpComboBox.Items.Add("Balcony 2");
-                                warpComboBox.Items.Add("Finish");
-                            }
-                        }
-                        else if (currentMapIndex == 1) // Main Menu
-                        {
-                            if (warpComboBox.Items.Count != 1)
-                            {
-                                warpComboBox.Items.Add("No warps available for this level");
-                                warpComboBox.SelectedItem = "No warps available for this level";
-                                warpButton.Enabled = false;
-                                warpComboBox.Enabled = false;
-                            }
-                        }
-                        else if (currentMapIndex == 2) // Paris
-                        {
-                            if (warpComboBox.Items.Count != 7)
-                            {
-                                warpComboBox.Items.Add("Start");
-                                warpComboBox.Items.Add("Balcony 1");
-                                warpComboBox.Items.Add("Cobra");
-                                warpComboBox.Items.Add("Rendezvous Point");
-                                warpComboBox.Items.Add("Carmelita Chase");
-                                warpComboBox.Items.Add("Balcony 2");
-                                warpComboBox.Items.Add("Finish");
-                            }
-                        }
-                    });
-
-                    Thread.Sleep(700);
+                    } //Misc tab
+                    Thread.Sleep(50);
                 }
-
-                Thread.Sleep(700);
+                Thread.Sleep(50);
             }
         }
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) //click syhax logo
+        private void syhaxLogo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) //click syhax logo
         {
-            MessageBox.Show("sus man!", "hello");
+            MessageBox.Show("PCSX2 trainer for the Sly games", "Info");
         }
 
         private void reloadLvl_Click(object sender, EventArgs e) // Reload Level + Levelselector
@@ -1868,9 +1685,9 @@ namespace syhax
             {
                 m.WriteMemory(reloadAOB, "bytes", mapIndia2);
             }
-            else if (levelComboBox.GetItemText(levelComboBox.SelectedItem) == "    Spice Factory (Bottom)")
+            else if (levelComboBox.GetItemText(levelComboBox.SelectedItem) == "    Spice Factory (tom)")
             {
-                m.WriteMemory(reloadAOB, "bytes", mapSpiceBottom);
+                m.WriteMemory(reloadAOB, "bytes", mapSpicetom);
             }
             else if (levelComboBox.GetItemText(levelComboBox.SelectedItem) == "    Spice Factory (Top)")
             {
@@ -2176,33 +1993,6 @@ namespace syhax
                 m.FreezeValue(entitystruct + offset, "float", amount.ToString());
             }
         }
-        /*
-        void SetActiveCoords(string xyz, float target, string entitystruct, string offset)
-        {
-            m.WriteMemory(entitystruct + offset, "float", target.ToString());
-        }
-        */
-        private void setActX_Click(object sender, EventArgs e)
-        {
-            float targetValue;
-            if (textBoxActX.Text == "")
-            {
-                targetValue = 0;
-            }
-            else
-            {
-                targetValue = float.Parse(textBoxActX.Text);
-            }
-            ChangeActiveCoords(targetValue, activeStruct, TransformOffset.coordOffsetX);
-        }
-        private void setActY_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void setActZ_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void entitySelector_SelectedIndexChanged(object sender, EventArgs e) //Entity selector
         {
@@ -2221,24 +2011,10 @@ namespace syhax
                 targetEntity = "Murray";
                 currentSelectedStruct = murrayStructBase;
             }
-            else if (entitySelector.GetItemText(entitySelector.SelectedItem) == "Neyla")
-            {
-                targetEntity = "Neyla";
-                currentSelectedStruct = neylaStructBase;
-            }
-            else if (entitySelector.GetItemText(entitySelector.SelectedItem) == "Dimitri")
-            {
-                targetEntity = "Dimitri";
-                currentSelectedStruct = dimitriStructBase;
-            }
-            else if (entitySelector.GetItemText(entitySelector.SelectedItem) == "Carmelita")
-            {
-                targetEntity = "Carmelita";
-                currentSelectedStruct = carmStructBase;
-            }
 
             float convertScale = m.ReadFloat(currentSelectedStruct + TransformOffset.scaleOffsetX, round: false); //update entscale text
             DelegateThisShit(entScale, convertScale);
+
 
             // entScaleTrackbar.Value = int.Parse((m.ReadFloat(currentSelectedStruct + TransformOffset.scaleOffsetX, round: true) * 100).ToString()); //update entscale trackbar
         }
@@ -2273,43 +2049,12 @@ namespace syhax
             float targetValue = float.Parse(entZ.Text) + entIncSlider.Value * -1; //decrement
             ChangeEntityCoords("z", targetValue, currentSelectedStruct, TransformOffset.coordOffsetZ);
         }
-        private void actEntIncreaseX_Click(object sender, EventArgs e)
-        {
-            float targetValue = float.Parse(actEntX.Text) + xyzTrackBar.Value; //increment
-            ChangeActiveCoords(targetValue, activeStruct, TransformOffset.coordOffsetX);
-        }//active increase X
-        private void actEntDecreaseX_Click(object sender, EventArgs e)
-        {
-            float targetValue = float.Parse(actEntX.Text) + xyzTrackBar.Value * -1; //decrement
-            ChangeActiveCoords(targetValue, activeStruct, TransformOffset.coordOffsetX);
-        }//active decrease X
-        private void actEntIncreaseY_Click(object sender, EventArgs e)
-        {
-            float targetValue = float.Parse(actEntY.Text) + xyzTrackBar.Value; //decrement
-            ChangeActiveCoords(targetValue, activeStruct, TransformOffset.coordOffsetY);
-        }//active increase Y
-        private void actEntDecreaseY_Click(object sender, EventArgs e)
-        {
-            float targetValue = float.Parse(actEntY.Text) + xyzTrackBar.Value * -1; //decrement
-            ChangeActiveCoords(targetValue, activeStruct, TransformOffset.coordOffsetY);
-        }//active decrease Y
-        private void actEntIncreaseZ_Click(object sender, EventArgs e)
-        {
-            float targetValue = float.Parse(actEntZ.Text) + xyzTrackBar.Value; //increment
-            ChangeActiveCoords(targetValue, activeStruct, TransformOffset.coordOffsetZ);
-        }//active increase Z
-        private void actEntDecreaseZ_Click(object sender, EventArgs e)
-        {
-            float targetValue = float.Parse(actEntZ.Text) + xyzTrackBar.Value * -1; //decrement
-            ChangeActiveCoords(targetValue, activeStruct, TransformOffset.coordOffsetZ);
-        }//active decrease Z
-
         private void entFreezeX_Click(object sender, EventArgs e) //entity freeze X
         {
             toggleEntFreezeX = !toggleEntFreezeX;
             if (toggleEntFreezeX)
             {
-                entX.ForeColor = Color.Red;
+                entX.ForeColor = Color.DarkRed;
 
                 if (targetEntity == "Sly")
                 {
@@ -2347,7 +2092,7 @@ namespace syhax
             toggleEntFreezeY = !toggleEntFreezeY;
             if (toggleEntFreezeY)
             {
-                entY.ForeColor = Color.Red;
+                entY.ForeColor = Color.DarkRed;
 
                 if (targetEntity == "Sly")
                 {
@@ -2385,7 +2130,7 @@ namespace syhax
             toggleEntFreezeZ = !toggleEntFreezeZ;
             if (toggleEntFreezeZ)
             {
-                entZ.ForeColor = Color.Red;
+                entZ.ForeColor = Color.DarkRed;
 
                 if (targetEntity == "Sly")
                 {
@@ -2418,16 +2163,66 @@ namespace syhax
                 }
             }
         }
+        private void entScaleTrackbar_ValueChanged(object sender, EventArgs e)
+        {
+            m.WriteMemory(currentSelectedStruct + TransformOffset.scaleOffsetX, "float", (entScaleTrackbar.Value / 100f).ToString("f1"));
+            m.WriteMemory(currentSelectedStruct + TransformOffset.scaleOffsetY, "float", (entScaleTrackbar.Value / 100f).ToString("f1"));
+            m.WriteMemory(currentSelectedStruct + TransformOffset.scaleOffsetZ, "float", (entScaleTrackbar.Value / 100f).ToString("f1"));
+            entScale.Invoke((MethodInvoker)delegate
+            {
+                entScale.Text = (entScaleTrackbar.Value / 100f).ToString("f1");
+            });
+        } //entity scale 
+        private void entScaleReset_Click(object sender, EventArgs e)
+        {
+            m.WriteMemory(currentSelectedStruct + TransformOffset.scaleOffsetX, "float", "1");
+            m.WriteMemory(currentSelectedStruct + TransformOffset.scaleOffsetY, "float", "1");
+            m.WriteMemory(currentSelectedStruct + TransformOffset.scaleOffsetZ, "float", "1");
+
+            float convertScale = m.ReadFloat(currentSelectedStruct + TransformOffset.scaleOffsetX, round: false); //update actscale text
+            DelegateThisShit(entScale, convertScale);
+        }
+
+        private void actEntIncreaseX_Click(object sender, EventArgs e)
+        {
+            float targetValue = float.Parse(actEntX.Text) + xyzTrackBar.Value; //increment
+            ChangeActiveCoords(targetValue, activeStruct, TransformOffset.coordOffsetX);
+        }//active increase X
+        private void actEntDecreaseX_Click(object sender, EventArgs e)
+        {
+            float targetValue = float.Parse(actEntX.Text) + xyzTrackBar.Value * -1; //decrement
+            ChangeActiveCoords(targetValue, activeStruct, TransformOffset.coordOffsetX);
+        }//active decrease X
+        private void actEntIncreaseY_Click(object sender, EventArgs e)
+        {
+            float targetValue = float.Parse(actEntY.Text) + xyzTrackBar.Value; //decrement
+            ChangeActiveCoords(targetValue, activeStruct, TransformOffset.coordOffsetY);
+        }//active increase Y
+        private void actEntDecreaseY_Click(object sender, EventArgs e)
+        {
+            float targetValue = float.Parse(actEntY.Text) + xyzTrackBar.Value * -1; //decrement
+            ChangeActiveCoords(targetValue, activeStruct, TransformOffset.coordOffsetY);
+        }//active decrease Y
+        private void actEntIncreaseZ_Click(object sender, EventArgs e)
+        {
+            float targetValue = float.Parse(actEntZ.Text) + xyzTrackBar.Value; //increment
+            ChangeActiveCoords(targetValue, activeStruct, TransformOffset.coordOffsetZ);
+        }//active increase Z
+        private void actEntDecreaseZ_Click(object sender, EventArgs e)
+        {
+            float targetValue = float.Parse(actEntZ.Text) + xyzTrackBar.Value * -1; //decrement
+            ChangeActiveCoords(targetValue, activeStruct, TransformOffset.coordOffsetZ);
+        }//active decrease Z
         private void actEntFreezeX_Click(object sender, EventArgs e) //active freeze X
         {
             toggleActFreezeX = !toggleActFreezeX;
             if (toggleActFreezeX)
             {
-                actEntX.ForeColor = Color.Red;
+                actEntX.ForeColor = Color.DarkRed;
 
                 m.FreezeValue(actStructBase + TransformOffset.coordOffsetX, "float", actEntX.Text);
             }
-            else
+            else if (!toggleActFreezeX)
             {
                 actEntX.ForeColor = Color.White;
 
@@ -2439,13 +2234,13 @@ namespace syhax
             toggleActFreezeY = !toggleActFreezeY;
             if (toggleActFreezeY)
             {
-                actEntY.ForeColor = Color.Red;
+                actEntY.ForeColor = Color.DarkRed;
 
                 m.FreezeValue(actStructBase + TransformOffset.coordOffsetY, "float", actEntY.Text);
             }
-            else
+            else if (!toggleActFreezeY)
             {
-                actEntY.ForeColor = Color.Red;
+                actEntY.ForeColor = Color.White;
 
                 m.UnfreezeValue(actStructBase + TransformOffset.coordOffsetY);
             }
@@ -2455,15 +2250,83 @@ namespace syhax
             toggleActFreezeZ = !toggleActFreezeZ;
             if (toggleActFreezeZ)
             {
-                actEntZ.ForeColor = Color.Red;
+                actEntZ.ForeColor = Color.DarkRed;
 
                 m.FreezeValue(actStructBase + TransformOffset.coordOffsetZ, "float", actEntZ.Text);
             }
-            else
+            else if (!toggleActFreezeZ)
             {
-                actEntZ.ForeColor = Color.Red;
+                actEntZ.ForeColor = Color.White;
 
                 m.UnfreezeValue(actStructBase + TransformOffset.coordOffsetZ);
+            }
+        }
+        private void actScaleTrackBar_ValueChanged(object sender, EventArgs e)
+        {
+            m.WriteMemory(activeStruct + TransformOffset.scaleOffsetX, "float", (actScaleTrackBar.Value / 100f).ToString("f1"));
+            m.WriteMemory(activeStruct + TransformOffset.scaleOffsetY, "float", (actScaleTrackBar.Value / 100f).ToString("f1"));
+            m.WriteMemory(activeStruct + TransformOffset.scaleOffsetZ, "float", (actScaleTrackBar.Value / 100f).ToString("f1"));
+            actScale.Invoke((MethodInvoker)delegate
+            {
+                actScale.Text = (actScaleTrackBar.Value / 100f).ToString("f1");
+            });
+        } //entity scale 
+        private void actScaleReset_Click(object sender, EventArgs e)
+        {
+            m.WriteMemory(activeStruct + TransformOffset.scaleOffsetX, "float", "1");
+            m.WriteMemory(activeStruct + TransformOffset.scaleOffsetY, "float", "1");
+            m.WriteMemory(activeStruct + TransformOffset.scaleOffsetZ, "float", "1");
+
+            float convertScale = m.ReadFloat(activeStruct + TransformOffset.scaleOffsetX, round: false); //update actscale text
+            DelegateThisShit(actScale, convertScale);
+        }
+
+        private void actHPIncrease_Click(object sender, EventArgs e)
+        {
+            m.WriteMemory(actHealth.Text, "int", "1");
+        }
+
+        private void actHPDecrease_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void actHPFreeze_Click(object sender, EventArgs e) //broken
+        {
+            toggleHPFreeze = !toggleHPFreeze;
+            if (toggleHPFreeze)
+            {
+                actHealth.ForeColor = Color.DarkRed;
+
+                if (actCharIndex == 7)
+                {
+                    m.FreezeValue(slyHPAmount, "int", actHealth.Text);
+                }
+                else if (actCharIndex == 8)
+                {
+                    m.FreezeValue(bentleyHPAmount, "int", actHealth.Text);
+                }
+                else if (actCharIndex == 9)
+                {
+                    m.FreezeValue(murrayHPAmount, "int", actHealth.Text);
+                }
+            }
+            else
+            {
+                actHealth.ForeColor = Color.White;
+
+                if (actCharIndex == 7)
+                {
+                    m.UnfreezeValue(slyHPAmount);
+                }
+                else if (actCharIndex == 8)
+                {
+                    m.UnfreezeValue(bentleyHPAmount);
+                }
+                else if (actCharIndex == 9)
+                {
+                    m.UnfreezeValue(murrayHPAmount);
+                }
             }
         }
 
@@ -2471,17 +2334,6 @@ namespace syhax
         {
             currentTab = tabControl1.SelectedIndex;
         }
-
-        private void entScaleTrackbar_ValueChanged(object sender, EventArgs e)
-        {
-            m.WriteMemory(currentSelectedStruct + TransformOffset.scaleOffsetX, "float", (entScaleTrackbar.Value / 100f).ToString("f1"));
-            m.WriteMemory(currentSelectedStruct + TransformOffset.scaleOffsetY, "float", (entScaleTrackbar.Value / 100f).ToString("f1"));
-            m.WriteMemory(currentSelectedStruct + TransformOffset.scaleOffsetZ, "float", (entScaleTrackbar.Value / 100f).ToString("f1"));
-            entScale.Invoke((MethodInvoker)delegate
-            {
-                entScale.Text = (entScaleTrackbar.Value / 100f).ToString("f1");
-            });
-        } //entity scale 
 
         private void checkBoxInfJumps_CheckedChanged(object sender, EventArgs e)
         {
@@ -2531,11 +2383,6 @@ namespace syhax
             m.WriteMemory(unlockGadgets1, "bytes", "FF FF FF FF");
             m.WriteMemory(unlockGadgets2, "bytes", "FF FF FF FF");
         } //unlock gadgets
-
-        private void clueScriptButton_Click(object sender, EventArgs e)
-        {
-
-        } //button that makes sly go around all bottles very fast wow
 
         private void trackBarGameClock_ValueChanged(object sender, EventArgs e)
         {
@@ -2590,97 +2437,17 @@ namespace syhax
             }
         }
 
-        private void actHPIncrease_Click(object sender, EventArgs e)
+
+
+
+
+
+
+
+
+        private void resetGameClock_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void actHPDecrease_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void actHPFreeze_Click(object sender, EventArgs e)
-        {
-            toggleHPFreeze = !toggleHPFreeze;
-            if (toggleHPFreeze)
-            {
-                actHealth.ForeColor = Color.Red;
-                if (actCharIndex == 7)
-                {
-                    m.FreezeValue(slyHPAmount, "int", actHealth.Text);
-                }
-                else if (actCharIndex == 8)
-                {
-                    m.FreezeValue(bentleyHPAmount, "int", actHealth.Text);
-                }
-                else if (actCharIndex == 9)
-                {
-                    m.FreezeValue(murrayHPAmount, "int", actHealth.Text);
-                }
-            }
-            else
-            {
-                actHealth.ForeColor = Color.White;
-                m.UnfreezeValue(slyHPAmount);
-                m.UnfreezeValue(bentleyHPAmount);
-                m.UnfreezeValue(murrayHPAmount);
-            }
-        }
-
-        /* async void ScanAOBs(string guard)
-        {
-            IEnumerable<long> scanResults = await m.AoBScan(0x20400000, 0x20500000, guard, true, true);
-
-            long topresult = scanResults.FirstOrDefault();
-            m.FreezeValue(topresult.ToString("X"), "int", "0");
-            //MessageBox.Show(topresult.ToString("X8"));
-            m.WriteMemory(reloadFunc, "int", "1");
-        } */
-        private void despawnReload_Click(object sender, EventArgs e)
-        {
-            if (despawnFlashlight.Checked)
-            {
-                //ScanAOBs(GuardAOB.moose);
-            }
-            if (despawnSwarmers.Checked)
-            {
-                //ScanAOBs(GuardAOB.swarmer);
-            }
-        }
-
-        private void guiSelector_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (guiSelector.GetItemText(guiSelector.SelectedItem) == "Gang Health Meter")
-            {
-                currentSelectedGUI = gangHPGUI;
-            }
-            else if (guiSelector.GetItemText(guiSelector.SelectedItem) == "Coin Count")
-            {
-                currentSelectedGUI = coinGUI;
-            }
-            else if (guiSelector.GetItemText(guiSelector.SelectedItem) == "Bottle Count")
-            {
-                currentSelectedGUI = bottleGUI;
-            }
-            else if (guiSelector.GetItemText(guiSelector.SelectedItem) == "Failscreen")
-            {
-                currentSelectedGUI = failGUI;
-            }
-        }
-
-        private void activateGUI_Click(object sender, EventArgs e)
-        {
-            guiState = m.ReadByte(currentSelectedGUI + GUIStruct.guiActivate);
-
-            if (guiState == 0 || guiState == 1)
-            {
-                m.WriteMemory(currentSelectedGUI, "byte", "2");
-            }
-            else if (guiState == 2)
-            {
-                m.WriteMemory(currentSelectedGUI, "byte", "1");
-            }
+            trackBarGameClock.Value = 100;
         }
     }
 }

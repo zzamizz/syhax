@@ -29,46 +29,24 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TabPage jobPage;
-            System.Windows.Forms.TabPage guiPage;
+            System.Windows.Forms.TrackBar trackBarGameClock;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(syhax2));
-            this.dagEditor = new System.Windows.Forms.GroupBox();
-            this.currentJob = new System.Windows.Forms.Label();
-            this.labelJob = new System.Windows.Forms.Label();
-            this.jobComboBox = new System.Windows.Forms.ComboBox();
-            this.loadJob = new System.Windows.Forms.Button();
-            this.activateGUI = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.labelBottString = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.labelMidString = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.labelTopString = new System.Windows.Forms.Label();
-            this.guiSelector = new System.Windows.Forms.ListBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.charTab = new System.Windows.Forms.TabPage();
             this.groupTransform = new System.Windows.Forms.GroupBox();
+            this.actScaleReset = new System.Windows.Forms.Button();
+            this.actScaleTrackBar = new System.Windows.Forms.TrackBar();
+            this.actScale = new System.Windows.Forms.Label();
+            this.labelActScale = new System.Windows.Forms.Label();
             this.checkSPFreeze = new System.Windows.Forms.CheckBox();
-            this.charMovementBox = new System.Windows.Forms.GroupBox();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.checkBoxFly = new System.Windows.Forms.CheckBox();
             this.xyzTrackBar = new System.Windows.Forms.TrackBar();
-            this.setActZ = new System.Windows.Forms.Button();
             this.checkBoxInfJumps = new System.Windows.Forms.CheckBox();
             this.actEntFreezeX = new System.Windows.Forms.Button();
-            this.setActY = new System.Windows.Forms.Button();
             this.labelActEntX = new System.Windows.Forms.Label();
-            this.setActX = new System.Windows.Forms.Button();
             this.labelActEntY = new System.Windows.Forms.Label();
-            this.textBoxActZ = new System.Windows.Forms.TextBox();
             this.labelActEntZ = new System.Windows.Forms.Label();
-            this.textBoxActY = new System.Windows.Forms.TextBox();
             this.actEntX = new System.Windows.Forms.Label();
-            this.textBoxActX = new System.Windows.Forms.TextBox();
             this.actEntY = new System.Windows.Forms.Label();
             this.actEntZ = new System.Windows.Forms.Label();
             this.actEntFreezeZ = new System.Windows.Forms.Button();
@@ -82,50 +60,42 @@
             this.groupPowers = new System.Windows.Forms.GroupBox();
             this.guardIgnore = new System.Windows.Forms.CheckBox();
             this.godMode = new System.Windows.Forms.CheckBox();
+            this.buttonGadgets = new System.Windows.Forms.Button();
             this.actHealth = new System.Windows.Forms.Label();
             this.actHPFreeze = new System.Windows.Forms.Button();
             this.actHPDecrease = new System.Windows.Forms.Button();
+            this.infGadget = new System.Windows.Forms.CheckBox();
             this.actHPIncrease = new System.Windows.Forms.Button();
             this.labelHealth = new System.Windows.Forms.Label();
-            this.buttonGadgets = new System.Windows.Forms.Button();
             this.labelActChar = new System.Windows.Forms.Label();
             this.actChar = new System.Windows.Forms.Label();
-            this.infGadget = new System.Windows.Forms.CheckBox();
             this.engineTab = new System.Windows.Forms.TabPage();
             this.checkGuardAI = new System.Windows.Forms.CheckBox();
             this.currentSuck = new System.Windows.Forms.Label();
             this.setSuck = new System.Windows.Forms.Button();
             this.suckBox = new System.Windows.Forms.TextBox();
             this.labelSuck = new System.Windows.Forms.Label();
-            this.reloadLang = new System.Windows.Forms.Button();
-            this.currentLang = new System.Windows.Forms.Label();
-            this.labelLang = new System.Windows.Forms.Label();
-            this.langSelector = new System.Windows.Forms.ComboBox();
+            this.warpComboBox = new System.Windows.Forms.ComboBox();
+            this.resetGameClock = new System.Windows.Forms.Button();
+            this.labelFieldClock = new System.Windows.Forms.Label();
+            this.currentMap = new System.Windows.Forms.Label();
+            this.labelMap = new System.Windows.Forms.Label();
+            this.levelComboBox = new System.Windows.Forms.ComboBox();
+            this.warpButton = new System.Windows.Forms.Button();
+            this.reloadLvl = new System.Windows.Forms.Button();
+            this.camTab = new System.Windows.Forms.TabPage();
             this.drawFreeze = new System.Windows.Forms.CheckBox();
             this.fovFreeze = new System.Windows.Forms.CheckBox();
-            this.warpComboBox = new System.Windows.Forms.ComboBox();
-            this.groupBoxGuards = new System.Windows.Forms.GroupBox();
-            this.despawnSwarmers = new System.Windows.Forms.CheckBox();
-            this.despawnReload = new System.Windows.Forms.Button();
-            this.despawnFlashlight = new System.Windows.Forms.CheckBox();
-            this.despawnInanimate = new System.Windows.Forms.CheckBox();
             this.resetDraw = new System.Windows.Forms.Button();
             this.labelDraw = new System.Windows.Forms.Label();
             this.trackBarDraw = new System.Windows.Forms.TrackBar();
             this.resetFOV = new System.Windows.Forms.Button();
             this.labelFOV = new System.Windows.Forms.Label();
             this.trackBarFOV = new System.Windows.Forms.TrackBar();
-            this.resetGameClock = new System.Windows.Forms.Button();
-            this.labelFieldClock = new System.Windows.Forms.Label();
-            this.trackBarGameClock = new System.Windows.Forms.TrackBar();
-            this.currentMap = new System.Windows.Forms.Label();
-            this.labelMap = new System.Windows.Forms.Label();
-            this.levelComboBox = new System.Windows.Forms.ComboBox();
-            this.warpButton = new System.Windows.Forms.Button();
-            this.reloadLvl = new System.Windows.Forms.Button();
             this.entTab = new System.Windows.Forms.TabPage();
             this.entitySelector = new System.Windows.Forms.ListBox();
             this.entTransformBox = new System.Windows.Forms.GroupBox();
+            this.entScaleReset = new System.Windows.Forms.Button();
             this.entScaleTrackbar = new System.Windows.Forms.TrackBar();
             this.entScale = new System.Windows.Forms.Label();
             this.labelEntLocate = new System.Windows.Forms.Label();
@@ -135,7 +105,6 @@
             this.entZ = new System.Windows.Forms.Label();
             this.entIncreaseX = new System.Windows.Forms.Button();
             this.entFreezeY = new System.Windows.Forms.Button();
-            this.labelEntRotation = new System.Windows.Forms.Label();
             this.labelEntZ = new System.Windows.Forms.Label();
             this.labelEntY = new System.Windows.Forms.Label();
             this.entY = new System.Windows.Forms.Label();
@@ -153,8 +122,11 @@
             this.entID = new System.Windows.Forms.Label();
             this.labelActTimer = new System.Windows.Forms.Label();
             this.miscTab = new System.Windows.Forms.TabPage();
-            this.clueScriptButton = new System.Windows.Forms.Button();
             this.miscBox = new System.Windows.Forms.GroupBox();
+            this.reloadLang = new System.Windows.Forms.Button();
+            this.currentLang = new System.Windows.Forms.Label();
+            this.labelLang = new System.Windows.Forms.Label();
+            this.langSelector = new System.Windows.Forms.ComboBox();
             this.groupMusic = new System.Windows.Forms.GroupBox();
             this.labelMusicState = new System.Windows.Forms.Label();
             this.labelMusicVol = new System.Windows.Forms.Label();
@@ -162,28 +134,25 @@
             this.normalMusic = new System.Windows.Forms.RadioButton();
             this.sneakMusic = new System.Windows.Forms.RadioButton();
             this.battleMusic = new System.Windows.Forms.RadioButton();
-            this.disableTextures = new System.Windows.Forms.CheckBox();
             this.weedButton = new System.Windows.Forms.PictureBox();
             this.buttonJobful = new System.Windows.Forms.Button();
             this.labelAttached = new System.Windows.Forms.Label();
             this.currentGame = new System.Windows.Forms.Label();
             this.syhaxLogo = new System.Windows.Forms.LinkLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            jobPage = new System.Windows.Forms.TabPage();
-            guiPage = new System.Windows.Forms.TabPage();
-            jobPage.SuspendLayout();
-            guiPage.SuspendLayout();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            trackBarGameClock = new System.Windows.Forms.TrackBar();
+            ((System.ComponentModel.ISupportInitialize)(trackBarGameClock)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.charTab.SuspendLayout();
             this.groupTransform.SuspendLayout();
-            this.charMovementBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.actScaleTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xyzTrackBar)).BeginInit();
             this.groupPowers.SuspendLayout();
             this.engineTab.SuspendLayout();
-            this.groupBoxGuards.SuspendLayout();
+            this.camTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarDraw)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarFOV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarGameClock)).BeginInit();
             this.entTab.SuspendLayout();
             this.entTransformBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.entScaleTrackbar)).BeginInit();
@@ -195,227 +164,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.weedButton)).BeginInit();
             this.SuspendLayout();
             // 
-            // jobPage
+            // trackBarGameClock
             // 
-            jobPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
-            jobPage.Controls.Add(this.dagEditor);
-            jobPage.Controls.Add(this.currentJob);
-            jobPage.Controls.Add(this.labelJob);
-            jobPage.Controls.Add(this.jobComboBox);
-            jobPage.Controls.Add(this.loadJob);
-            jobPage.Location = new System.Drawing.Point(4, 4);
-            jobPage.Name = "jobPage";
-            jobPage.Size = new System.Drawing.Size(793, 342);
-            jobPage.TabIndex = 6;
-            jobPage.Text = "Jobs";
-            // 
-            // dagEditor
-            // 
-            this.dagEditor.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dagEditor.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.dagEditor.Location = new System.Drawing.Point(19, 80);
-            this.dagEditor.Name = "dagEditor";
-            this.dagEditor.Size = new System.Drawing.Size(334, 246);
-            this.dagEditor.TabIndex = 28;
-            this.dagEditor.TabStop = false;
-            this.dagEditor.Text = "DAG Editor";
-            // 
-            // currentJob
-            // 
-            this.currentJob.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.currentJob.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentJob.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.currentJob.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.currentJob.Location = new System.Drawing.Point(141, 13);
-            this.currentJob.Name = "currentJob";
-            this.currentJob.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.currentJob.Size = new System.Drawing.Size(216, 22);
-            this.currentJob.TabIndex = 27;
-            this.currentJob.Text = "???";
-            this.currentJob.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // labelJob
-            // 
-            this.labelJob.AutoSize = true;
-            this.labelJob.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJob.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelJob.Location = new System.Drawing.Point(15, 13);
-            this.labelJob.Name = "labelJob";
-            this.labelJob.Size = new System.Drawing.Size(120, 22);
-            this.labelJob.TabIndex = 26;
-            this.labelJob.Text = "Current Job";
-            // 
-            // jobComboBox
-            // 
-            this.jobComboBox.DropDownHeight = 160;
-            this.jobComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.jobComboBox.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jobComboBox.FormattingEnabled = true;
-            this.jobComboBox.IntegralHeight = false;
-            this.jobComboBox.Location = new System.Drawing.Point(19, 42);
-            this.jobComboBox.Name = "jobComboBox";
-            this.jobComboBox.Size = new System.Drawing.Size(248, 23);
-            this.jobComboBox.TabIndex = 25;
-            // 
-            // loadJob
-            // 
-            this.loadJob.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.loadJob.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadJob.Location = new System.Drawing.Point(272, 39);
-            this.loadJob.Name = "loadJob";
-            this.loadJob.Size = new System.Drawing.Size(81, 29);
-            this.loadJob.TabIndex = 24;
-            this.loadJob.Text = "Load";
-            this.loadJob.UseVisualStyleBackColor = true;
-            // 
-            // guiPage
-            // 
-            guiPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
-            guiPage.Controls.Add(this.activateGUI);
-            guiPage.Controls.Add(this.button3);
-            guiPage.Controls.Add(this.textBox3);
-            guiPage.Controls.Add(this.labelBottString);
-            guiPage.Controls.Add(this.button2);
-            guiPage.Controls.Add(this.textBox2);
-            guiPage.Controls.Add(this.labelMidString);
-            guiPage.Controls.Add(this.button1);
-            guiPage.Controls.Add(this.textBox1);
-            guiPage.Controls.Add(this.labelTopString);
-            guiPage.Controls.Add(this.guiSelector);
-            guiPage.Location = new System.Drawing.Point(4, 4);
-            guiPage.Name = "guiPage";
-            guiPage.Size = new System.Drawing.Size(793, 342);
-            guiPage.TabIndex = 5;
-            guiPage.Text = "GUI";
-            // 
-            // activateGUI
-            // 
-            this.activateGUI.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.activateGUI.Location = new System.Drawing.Point(255, 18);
-            this.activateGUI.Name = "activateGUI";
-            this.activateGUI.Size = new System.Drawing.Size(104, 28);
-            this.activateGUI.TabIndex = 67;
-            this.activateGUI.Text = "Activate";
-            this.activateGUI.UseVisualStyleBackColor = true;
-            this.activateGUI.Click += new System.EventHandler(this.activateGUI_Click);
-            // 
-            // button3
-            // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(326, 204);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(35, 21);
-            this.button3.TabIndex = 66;
-            this.button3.Text = "Set";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(255, 203);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(65, 23);
-            this.textBox3.TabIndex = 65;
-            // 
-            // labelBottString
-            // 
-            this.labelBottString.AutoSize = true;
-            this.labelBottString.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBottString.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelBottString.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelBottString.Location = new System.Drawing.Point(251, 177);
-            this.labelBottString.Name = "labelBottString";
-            this.labelBottString.Size = new System.Drawing.Size(140, 22);
-            this.labelBottString.TabIndex = 64;
-            this.labelBottString.Text = "Bottom String";
-            this.labelBottString.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(326, 143);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(35, 21);
-            this.button2.TabIndex = 63;
-            this.button2.Text = "Set";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(255, 142);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(65, 23);
-            this.textBox2.TabIndex = 62;
-            // 
-            // labelMidString
-            // 
-            this.labelMidString.AutoSize = true;
-            this.labelMidString.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMidString.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelMidString.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelMidString.Location = new System.Drawing.Point(251, 116);
-            this.labelMidString.Name = "labelMidString";
-            this.labelMidString.Size = new System.Drawing.Size(140, 22);
-            this.labelMidString.TabIndex = 61;
-            this.labelMidString.Text = "Middle String";
-            this.labelMidString.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(326, 82);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 21);
-            this.button1.TabIndex = 60;
-            this.button1.Text = "Set";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(255, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(65, 23);
-            this.textBox1.TabIndex = 59;
-            // 
-            // labelTopString
-            // 
-            this.labelTopString.AutoSize = true;
-            this.labelTopString.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTopString.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelTopString.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelTopString.Location = new System.Drawing.Point(251, 55);
-            this.labelTopString.Name = "labelTopString";
-            this.labelTopString.Size = new System.Drawing.Size(110, 22);
-            this.labelTopString.TabIndex = 58;
-            this.labelTopString.Text = "Top String";
-            this.labelTopString.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // guiSelector
-            // 
-            this.guiSelector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(40)))));
-            this.guiSelector.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guiSelector.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.guiSelector.FormattingEnabled = true;
-            this.guiSelector.ItemHeight = 19;
-            this.guiSelector.Items.AddRange(new object[] {
-            "Master",
-            "Gang Health Meter",
-            "Coin Count",
-            "Bottle Count",
-            "Disc Ejected",
-            "Black Bars",
-            "Infobox",
-            "Sly Mask Transition",
-            "Failscreen",
-            "ThiefNet"});
-            this.guiSelector.Location = new System.Drawing.Point(19, 18);
-            this.guiSelector.Name = "guiSelector";
-            this.guiSelector.ScrollAlwaysVisible = true;
-            this.guiSelector.Size = new System.Drawing.Size(217, 308);
-            this.guiSelector.TabIndex = 56;
-            this.guiSelector.SelectedIndexChanged += new System.EventHandler(this.guiSelector_SelectedIndexChanged);
+            trackBarGameClock.LargeChange = 10;
+            trackBarGameClock.Location = new System.Drawing.Point(122, 113);
+            trackBarGameClock.Maximum = 500;
+            trackBarGameClock.Name = "trackBarGameClock";
+            trackBarGameClock.Size = new System.Drawing.Size(104, 45);
+            trackBarGameClock.TabIndex = 25;
+            trackBarGameClock.TickFrequency = 0;
+            trackBarGameClock.TickStyle = System.Windows.Forms.TickStyle.None;
+            trackBarGameClock.Value = 100;
+            trackBarGameClock.ValueChanged += new System.EventHandler(this.trackBarGameClock_ValueChanged);
             // 
             // backgroundWorker1
             // 
@@ -424,57 +184,53 @@
             // tabControl1
             // 
             this.tabControl1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.charTab);
             this.tabControl1.Controls.Add(this.engineTab);
+            this.tabControl1.Controls.Add(this.camTab);
             this.tabControl1.Controls.Add(this.entTab);
-            this.tabControl1.Controls.Add(jobPage);
-            this.tabControl1.Controls.Add(guiPage);
             this.tabControl1.Controls.Add(this.miscTab);
             this.tabControl1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(13, 38);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(801, 370);
+            this.tabControl1.Size = new System.Drawing.Size(683, 370);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // charTab
             // 
-            this.charTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.charTab.BackColor = System.Drawing.Color.Gray;
             this.charTab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.charTab.Controls.Add(this.groupTransform);
             this.charTab.Controls.Add(this.groupPowers);
-            this.charTab.Controls.Add(this.buttonGadgets);
             this.charTab.Controls.Add(this.labelActChar);
             this.charTab.Controls.Add(this.actChar);
-            this.charTab.Controls.Add(this.infGadget);
             this.charTab.Location = new System.Drawing.Point(4, 4);
             this.charTab.Name = "charTab";
             this.charTab.Padding = new System.Windows.Forms.Padding(3);
-            this.charTab.Size = new System.Drawing.Size(793, 342);
+            this.charTab.Size = new System.Drawing.Size(675, 342);
             this.charTab.TabIndex = 0;
             this.charTab.Text = "Character";
             this.charTab.ToolTipText = "Playable character";
             // 
             // groupTransform
             // 
+            this.groupTransform.BackColor = System.Drawing.Color.Gray;
+            this.groupTransform.Controls.Add(this.actScaleReset);
+            this.groupTransform.Controls.Add(this.actScaleTrackBar);
+            this.groupTransform.Controls.Add(this.actScale);
+            this.groupTransform.Controls.Add(this.labelActScale);
             this.groupTransform.Controls.Add(this.checkSPFreeze);
-            this.groupTransform.Controls.Add(this.charMovementBox);
-            this.groupTransform.Controls.Add(this.checkBoxFly);
             this.groupTransform.Controls.Add(this.xyzTrackBar);
-            this.groupTransform.Controls.Add(this.setActZ);
             this.groupTransform.Controls.Add(this.checkBoxInfJumps);
             this.groupTransform.Controls.Add(this.actEntFreezeX);
-            this.groupTransform.Controls.Add(this.setActY);
             this.groupTransform.Controls.Add(this.labelActEntX);
-            this.groupTransform.Controls.Add(this.setActX);
             this.groupTransform.Controls.Add(this.labelActEntY);
-            this.groupTransform.Controls.Add(this.textBoxActZ);
             this.groupTransform.Controls.Add(this.labelActEntZ);
-            this.groupTransform.Controls.Add(this.textBoxActY);
             this.groupTransform.Controls.Add(this.actEntX);
-            this.groupTransform.Controls.Add(this.textBoxActX);
             this.groupTransform.Controls.Add(this.actEntY);
             this.groupTransform.Controls.Add(this.actEntZ);
             this.groupTransform.Controls.Add(this.actEntFreezeZ);
@@ -489,88 +245,96 @@
             this.groupTransform.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.groupTransform.Location = new System.Drawing.Point(17, 59);
             this.groupTransform.Name = "groupTransform";
-            this.groupTransform.Size = new System.Drawing.Size(443, 275);
+            this.groupTransform.Size = new System.Drawing.Size(320, 164);
             this.groupTransform.TabIndex = 58;
             this.groupTransform.TabStop = false;
             this.groupTransform.Text = "Transform";
             // 
+            // actScaleReset
+            // 
+            this.actScaleReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actScaleReset.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actScaleReset.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.actScaleReset.Location = new System.Drawing.Point(291, 105);
+            this.actScaleReset.Name = "actScaleReset";
+            this.actScaleReset.Size = new System.Drawing.Size(21, 21);
+            this.actScaleReset.TabIndex = 57;
+            this.actScaleReset.Text = "1";
+            this.actScaleReset.UseVisualStyleBackColor = true;
+            this.actScaleReset.Click += new System.EventHandler(this.actScaleReset_Click);
+            // 
+            // actScaleTrackBar
+            // 
+            this.actScaleTrackBar.AutoSize = false;
+            this.actScaleTrackBar.Location = new System.Drawing.Point(189, 106);
+            this.actScaleTrackBar.Maximum = 3000;
+            this.actScaleTrackBar.Minimum = 50;
+            this.actScaleTrackBar.Name = "actScaleTrackBar";
+            this.actScaleTrackBar.Size = new System.Drawing.Size(98, 23);
+            this.actScaleTrackBar.TabIndex = 56;
+            this.actScaleTrackBar.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.actScaleTrackBar.Value = 100;
+            this.actScaleTrackBar.ValueChanged += new System.EventHandler(this.actScaleTrackBar_ValueChanged);
+            // 
+            // actScale
+            // 
+            this.actScale.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.actScale.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actScale.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.actScale.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.actScale.Location = new System.Drawing.Point(73, 106);
+            this.actScale.Name = "actScale";
+            this.actScale.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.actScale.Size = new System.Drawing.Size(110, 22);
+            this.actScale.TabIndex = 55;
+            this.actScale.Text = "???";
+            this.actScale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelActScale
+            // 
+            this.labelActScale.AutoSize = true;
+            this.labelActScale.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelActScale.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelActScale.Location = new System.Drawing.Point(7, 106);
+            this.labelActScale.Name = "labelActScale";
+            this.labelActScale.Size = new System.Drawing.Size(60, 22);
+            this.labelActScale.TabIndex = 54;
+            this.labelActScale.Text = "Scale";
+            // 
             // checkSPFreeze
             // 
             this.checkSPFreeze.AutoSize = true;
-            this.checkSPFreeze.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkSPFreeze.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkSPFreeze.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkSPFreeze.Location = new System.Drawing.Point(327, 108);
+            this.checkSPFreeze.Location = new System.Drawing.Point(171, 131);
             this.checkSPFreeze.Name = "checkSPFreeze";
             this.checkSPFreeze.Size = new System.Drawing.Size(109, 23);
-            this.checkSPFreeze.TabIndex = 52;
+            this.checkSPFreeze.TabIndex = 49;
             this.checkSPFreeze.Text = "SP Freeze";
+            this.toolTip.SetToolTip(this.checkSPFreeze, "\'\'Sucker Punch\'\' freeze will stop the character completely from moving into any d" +
+        "irection without stuttering.");
             this.checkSPFreeze.UseVisualStyleBackColor = true;
             this.checkSPFreeze.CheckedChanged += new System.EventHandler(this.checkSPFreeze_CheckedChanged);
-            // 
-            // charMovementBox
-            // 
-            this.charMovementBox.Controls.Add(this.vScrollBar1);
-            this.charMovementBox.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.charMovementBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.charMovementBox.Location = new System.Drawing.Point(11, 153);
-            this.charMovementBox.Name = "charMovementBox";
-            this.charMovementBox.Size = new System.Drawing.Size(425, 113);
-            this.charMovementBox.TabIndex = 51;
-            this.charMovementBox.TabStop = false;
-            this.charMovementBox.Text = "Movement Values";
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(407, 12);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 99);
-            this.vScrollBar1.TabIndex = 0;
-            // 
-            // checkBoxFly
-            // 
-            this.checkBoxFly.AutoSize = true;
-            this.checkBoxFly.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxFly.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBoxFly.Location = new System.Drawing.Point(11, 108);
-            this.checkBoxFly.Name = "checkBoxFly";
-            this.checkBoxFly.Size = new System.Drawing.Size(55, 23);
-            this.checkBoxFly.TabIndex = 47;
-            this.checkBoxFly.Text = "Fly";
-            this.checkBoxFly.UseVisualStyleBackColor = true;
             // 
             // xyzTrackBar
             // 
             this.xyzTrackBar.AutoSize = false;
-            this.xyzTrackBar.Location = new System.Drawing.Point(418, 29);
+            this.xyzTrackBar.Location = new System.Drawing.Point(293, 35);
             this.xyzTrackBar.Maximum = 700;
             this.xyzTrackBar.Minimum = 50;
             this.xyzTrackBar.Name = "xyzTrackBar";
             this.xyzTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.xyzTrackBar.Size = new System.Drawing.Size(22, 82);
+            this.xyzTrackBar.Size = new System.Drawing.Size(22, 75);
             this.xyzTrackBar.TabIndex = 46;
             this.xyzTrackBar.TickStyle = System.Windows.Forms.TickStyle.None;
             this.xyzTrackBar.Value = 50;
-            // 
-            // setActZ
-            // 
-            this.setActZ.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.setActZ.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.setActZ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.setActZ.Location = new System.Drawing.Point(290, 83);
-            this.setActZ.Name = "setActZ";
-            this.setActZ.Size = new System.Drawing.Size(33, 21);
-            this.setActZ.TabIndex = 43;
-            this.setActZ.Text = "Set";
-            this.setActZ.UseVisualStyleBackColor = true;
-            this.setActZ.Click += new System.EventHandler(this.setActZ_Click);
             // 
             // checkBoxInfJumps
             // 
             this.checkBoxInfJumps.AutoSize = true;
             this.checkBoxInfJumps.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxInfJumps.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkBoxInfJumps.Location = new System.Drawing.Point(11, 132);
+            this.checkBoxInfJumps.Location = new System.Drawing.Point(11, 131);
             this.checkBoxInfJumps.Name = "checkBoxInfJumps";
             this.checkBoxInfJumps.Size = new System.Drawing.Size(154, 23);
             this.checkBoxInfJumps.TabIndex = 48;
@@ -591,19 +355,6 @@
             this.actEntFreezeX.UseVisualStyleBackColor = true;
             this.actEntFreezeX.Click += new System.EventHandler(this.actEntFreezeX_Click);
             // 
-            // setActY
-            // 
-            this.setActY.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.setActY.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.setActY.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.setActY.Location = new System.Drawing.Point(290, 59);
-            this.setActY.Name = "setActY";
-            this.setActY.Size = new System.Drawing.Size(33, 21);
-            this.setActY.TabIndex = 42;
-            this.setActY.Text = "Set";
-            this.setActY.UseVisualStyleBackColor = true;
-            this.setActY.Click += new System.EventHandler(this.setActY_Click);
-            // 
             // labelActEntX
             // 
             this.labelActEntX.AutoSize = true;
@@ -614,19 +365,6 @@
             this.labelActEntX.Size = new System.Drawing.Size(30, 22);
             this.labelActEntX.TabIndex = 22;
             this.labelActEntX.Text = "X:";
-            // 
-            // setActX
-            // 
-            this.setActX.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.setActX.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.setActX.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.setActX.Location = new System.Drawing.Point(290, 35);
-            this.setActX.Name = "setActX";
-            this.setActX.Size = new System.Drawing.Size(33, 21);
-            this.setActX.TabIndex = 41;
-            this.setActX.Text = "Set";
-            this.setActX.UseVisualStyleBackColor = true;
-            this.setActX.Click += new System.EventHandler(this.setActX_Click);
             // 
             // labelActEntY
             // 
@@ -639,16 +377,6 @@
             this.labelActEntY.TabIndex = 23;
             this.labelActEntY.Text = "Y:";
             // 
-            // textBoxActZ
-            // 
-            this.textBoxActZ.BackColor = System.Drawing.Color.White;
-            this.textBoxActZ.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxActZ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBoxActZ.Location = new System.Drawing.Point(327, 84);
-            this.textBoxActZ.Name = "textBoxActZ";
-            this.textBoxActZ.Size = new System.Drawing.Size(87, 20);
-            this.textBoxActZ.TabIndex = 40;
-            // 
             // labelActEntZ
             // 
             this.labelActEntZ.AutoSize = true;
@@ -659,16 +387,6 @@
             this.labelActEntZ.Size = new System.Drawing.Size(30, 22);
             this.labelActEntZ.TabIndex = 24;
             this.labelActEntZ.Text = "Z:";
-            // 
-            // textBoxActY
-            // 
-            this.textBoxActY.BackColor = System.Drawing.Color.White;
-            this.textBoxActY.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxActY.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBoxActY.Location = new System.Drawing.Point(327, 60);
-            this.textBoxActY.Name = "textBoxActY";
-            this.textBoxActY.Size = new System.Drawing.Size(87, 20);
-            this.textBoxActY.TabIndex = 39;
             // 
             // actEntX
             // 
@@ -683,16 +401,6 @@
             this.actEntX.TabIndex = 25;
             this.actEntX.Text = "???";
             this.actEntX.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBoxActX
-            // 
-            this.textBoxActX.BackColor = System.Drawing.Color.White;
-            this.textBoxActX.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxActX.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBoxActX.Location = new System.Drawing.Point(327, 36);
-            this.textBoxActX.Name = "textBoxActX";
-            this.textBoxActX.Size = new System.Drawing.Size(87, 20);
-            this.textBoxActX.TabIndex = 38;
             // 
             // actEntY
             // 
@@ -826,16 +534,18 @@
             // 
             this.groupPowers.Controls.Add(this.guardIgnore);
             this.groupPowers.Controls.Add(this.godMode);
+            this.groupPowers.Controls.Add(this.buttonGadgets);
             this.groupPowers.Controls.Add(this.actHealth);
             this.groupPowers.Controls.Add(this.actHPFreeze);
             this.groupPowers.Controls.Add(this.actHPDecrease);
+            this.groupPowers.Controls.Add(this.infGadget);
             this.groupPowers.Controls.Add(this.actHPIncrease);
             this.groupPowers.Controls.Add(this.labelHealth);
             this.groupPowers.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupPowers.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupPowers.Location = new System.Drawing.Point(471, 110);
+            this.groupPowers.Location = new System.Drawing.Point(343, 59);
             this.groupPowers.Name = "groupPowers";
-            this.groupPowers.Size = new System.Drawing.Size(310, 215);
+            this.groupPowers.Size = new System.Drawing.Size(316, 215);
             this.groupPowers.TabIndex = 57;
             this.groupPowers.TabStop = false;
             this.groupPowers.Text = "Powers";
@@ -860,11 +570,24 @@
             this.godMode.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.godMode.Location = new System.Drawing.Point(14, 57);
             this.godMode.Name = "godMode";
-            this.godMode.Size = new System.Drawing.Size(100, 23);
+            this.godMode.Size = new System.Drawing.Size(163, 23);
             this.godMode.TabIndex = 58;
-            this.godMode.Text = "God Mode";
+            this.godMode.Text = "Invulnerability";
             this.godMode.UseVisualStyleBackColor = true;
             this.godMode.CheckedChanged += new System.EventHandler(this.godMode_CheckedChanged);
+            // 
+            // buttonGadgets
+            // 
+            this.buttonGadgets.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonGadgets.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGadgets.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonGadgets.Location = new System.Drawing.Point(14, 131);
+            this.buttonGadgets.Name = "buttonGadgets";
+            this.buttonGadgets.Size = new System.Drawing.Size(102, 21);
+            this.buttonGadgets.TabIndex = 56;
+            this.buttonGadgets.Text = "Unlock Gadgets";
+            this.buttonGadgets.UseVisualStyleBackColor = true;
+            this.buttonGadgets.Click += new System.EventHandler(this.buttonGadgets_Click);
             // 
             // actHealth
             // 
@@ -904,6 +627,18 @@
             this.actHPDecrease.UseVisualStyleBackColor = true;
             this.actHPDecrease.Click += new System.EventHandler(this.actHPDecrease_Click);
             // 
+            // infGadget
+            // 
+            this.infGadget.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infGadget.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.infGadget.Location = new System.Drawing.Point(14, 103);
+            this.infGadget.Name = "infGadget";
+            this.infGadget.Size = new System.Drawing.Size(219, 28);
+            this.infGadget.TabIndex = 50;
+            this.infGadget.Text = "Infinite Gadget Power";
+            this.infGadget.UseVisualStyleBackColor = true;
+            this.infGadget.CheckedChanged += new System.EventHandler(this.infGadget_CheckedChanged);
+            // 
             // actHPIncrease
             // 
             this.actHPIncrease.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -929,19 +664,6 @@
             this.labelHealth.Text = "Health";
             this.labelHealth.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // buttonGadgets
-            // 
-            this.buttonGadgets.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonGadgets.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGadgets.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonGadgets.Location = new System.Drawing.Point(637, 12);
-            this.buttonGadgets.Name = "buttonGadgets";
-            this.buttonGadgets.Size = new System.Drawing.Size(144, 29);
-            this.buttonGadgets.TabIndex = 56;
-            this.buttonGadgets.Text = "Unlock Gadgets";
-            this.buttonGadgets.UseVisualStyleBackColor = true;
-            this.buttonGadgets.Click += new System.EventHandler(this.buttonGadgets_Click);
-            // 
             // labelActChar
             // 
             this.labelActChar.AutoSize = true;
@@ -949,9 +671,9 @@
             this.labelActChar.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labelActChar.Location = new System.Drawing.Point(13, 12);
             this.labelActChar.Name = "labelActChar";
-            this.labelActChar.Size = new System.Drawing.Size(170, 22);
+            this.labelActChar.Size = new System.Drawing.Size(180, 22);
             this.labelActChar.TabIndex = 21;
-            this.labelActChar.Text = "Active Character";
+            this.labelActChar.Text = "Current Character";
             // 
             // actChar
             // 
@@ -965,44 +687,18 @@
             this.actChar.Text = "???";
             this.actChar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // infGadget
-            // 
-            this.infGadget.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.infGadget.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.infGadget.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.infGadget.Location = new System.Drawing.Point(568, 88);
-            this.infGadget.Name = "infGadget";
-            this.infGadget.Size = new System.Drawing.Size(219, 28);
-            this.infGadget.TabIndex = 50;
-            this.infGadget.Text = "Infinite Gadget Power";
-            this.infGadget.UseVisualStyleBackColor = true;
-            this.infGadget.CheckedChanged += new System.EventHandler(this.infGadget_CheckedChanged);
-            // 
             // engineTab
             // 
-            this.engineTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.engineTab.BackColor = System.Drawing.Color.Gray;
             this.engineTab.Controls.Add(this.checkGuardAI);
             this.engineTab.Controls.Add(this.currentSuck);
             this.engineTab.Controls.Add(this.setSuck);
             this.engineTab.Controls.Add(this.suckBox);
             this.engineTab.Controls.Add(this.labelSuck);
-            this.engineTab.Controls.Add(this.reloadLang);
-            this.engineTab.Controls.Add(this.currentLang);
-            this.engineTab.Controls.Add(this.labelLang);
-            this.engineTab.Controls.Add(this.langSelector);
-            this.engineTab.Controls.Add(this.drawFreeze);
-            this.engineTab.Controls.Add(this.fovFreeze);
             this.engineTab.Controls.Add(this.warpComboBox);
-            this.engineTab.Controls.Add(this.groupBoxGuards);
-            this.engineTab.Controls.Add(this.resetDraw);
-            this.engineTab.Controls.Add(this.labelDraw);
-            this.engineTab.Controls.Add(this.trackBarDraw);
-            this.engineTab.Controls.Add(this.resetFOV);
-            this.engineTab.Controls.Add(this.labelFOV);
-            this.engineTab.Controls.Add(this.trackBarFOV);
             this.engineTab.Controls.Add(this.resetGameClock);
             this.engineTab.Controls.Add(this.labelFieldClock);
-            this.engineTab.Controls.Add(this.trackBarGameClock);
+            this.engineTab.Controls.Add(trackBarGameClock);
             this.engineTab.Controls.Add(this.currentMap);
             this.engineTab.Controls.Add(this.labelMap);
             this.engineTab.Controls.Add(this.levelComboBox);
@@ -1010,7 +706,7 @@
             this.engineTab.Controls.Add(this.reloadLvl);
             this.engineTab.Location = new System.Drawing.Point(4, 4);
             this.engineTab.Name = "engineTab";
-            this.engineTab.Size = new System.Drawing.Size(793, 342);
+            this.engineTab.Size = new System.Drawing.Size(675, 342);
             this.engineTab.TabIndex = 2;
             this.engineTab.Text = "Engine";
             // 
@@ -1019,11 +715,11 @@
             this.checkGuardAI.AutoSize = true;
             this.checkGuardAI.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkGuardAI.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.checkGuardAI.Location = new System.Drawing.Point(230, 267);
+            this.checkGuardAI.Location = new System.Drawing.Point(19, 305);
             this.checkGuardAI.Name = "checkGuardAI";
-            this.checkGuardAI.Size = new System.Drawing.Size(100, 23);
+            this.checkGuardAI.Size = new System.Drawing.Size(172, 23);
             this.checkGuardAI.TabIndex = 58;
-            this.checkGuardAI.Text = "Guard AI";
+            this.checkGuardAI.Text = "Disable Guard AI";
             this.checkGuardAI.UseVisualStyleBackColor = true;
             this.checkGuardAI.CheckedChanged += new System.EventHandler(this.checkGuardAI_CheckedChanged);
             // 
@@ -1032,7 +728,7 @@
             this.currentSuck.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentSuck.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.currentSuck.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.currentSuck.Location = new System.Drawing.Point(273, 214);
+            this.currentSuck.Location = new System.Drawing.Point(62, 252);
             this.currentSuck.Name = "currentSuck";
             this.currentSuck.Size = new System.Drawing.Size(97, 22);
             this.currentSuck.TabIndex = 57;
@@ -1043,7 +739,7 @@
             // 
             this.setSuck.Cursor = System.Windows.Forms.Cursors.Hand;
             this.setSuck.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.setSuck.Location = new System.Drawing.Point(336, 240);
+            this.setSuck.Location = new System.Drawing.Point(125, 278);
             this.setSuck.Name = "setSuck";
             this.setSuck.Size = new System.Drawing.Size(33, 21);
             this.setSuck.TabIndex = 56;
@@ -1052,7 +748,7 @@
             // 
             // suckBox
             // 
-            this.suckBox.Location = new System.Drawing.Point(230, 239);
+            this.suckBox.Location = new System.Drawing.Point(19, 277);
             this.suckBox.Name = "suckBox";
             this.suckBox.Size = new System.Drawing.Size(100, 23);
             this.suckBox.TabIndex = 55;
@@ -1063,93 +759,12 @@
             this.labelSuck.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSuck.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labelSuck.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelSuck.Location = new System.Drawing.Point(226, 213);
+            this.labelSuck.Location = new System.Drawing.Point(15, 251);
             this.labelSuck.Name = "labelSuck";
             this.labelSuck.Size = new System.Drawing.Size(50, 22);
             this.labelSuck.TabIndex = 54;
             this.labelSuck.Text = "Suck";
             this.labelSuck.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // reloadLang
-            // 
-            this.reloadLang.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.reloadLang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.reloadLang.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reloadLang.Location = new System.Drawing.Point(694, 299);
-            this.reloadLang.Name = "reloadLang";
-            this.reloadLang.Size = new System.Drawing.Size(81, 29);
-            this.reloadLang.TabIndex = 50;
-            this.reloadLang.Text = "Apply";
-            this.reloadLang.UseVisualStyleBackColor = true;
-            this.reloadLang.Click += new System.EventHandler(this.reloadLang_Click);
-            // 
-            // currentLang
-            // 
-            this.currentLang.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentLang.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.currentLang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.currentLang.Location = new System.Drawing.Point(553, 274);
-            this.currentLang.Name = "currentLang";
-            this.currentLang.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.currentLang.Size = new System.Drawing.Size(225, 22);
-            this.currentLang.TabIndex = 49;
-            this.currentLang.Text = "???";
-            this.currentLang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // labelLang
-            // 
-            this.labelLang.AutoSize = true;
-            this.labelLang.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLang.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelLang.Location = new System.Drawing.Point(436, 273);
-            this.labelLang.Name = "labelLang";
-            this.labelLang.Size = new System.Drawing.Size(90, 22);
-            this.labelLang.TabIndex = 48;
-            this.labelLang.Text = "Language";
-            // 
-            // langSelector
-            // 
-            this.langSelector.DropDownHeight = 160;
-            this.langSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.langSelector.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.langSelector.FormattingEnabled = true;
-            this.langSelector.IntegralHeight = false;
-            this.langSelector.Items.AddRange(new object[] {
-            "English",
-            "Français",
-            "Deutsch",
-            "Español",
-            "Italiano",
-            "Nederlands",
-            "Português",
-            "Dansk",
-            "Suomalainen",
-            "Norsk",
-            "Svensk"});
-            this.langSelector.Location = new System.Drawing.Point(440, 302);
-            this.langSelector.Name = "langSelector";
-            this.langSelector.Size = new System.Drawing.Size(248, 23);
-            this.langSelector.TabIndex = 47;
-            // 
-            // drawFreeze
-            // 
-            this.drawFreeze.AutoSize = true;
-            this.drawFreeze.BackColor = System.Drawing.Color.Transparent;
-            this.drawFreeze.Location = new System.Drawing.Point(661, 58);
-            this.drawFreeze.Name = "drawFreeze";
-            this.drawFreeze.Size = new System.Drawing.Size(15, 14);
-            this.drawFreeze.TabIndex = 45;
-            this.drawFreeze.UseVisualStyleBackColor = false;
-            // 
-            // fovFreeze
-            // 
-            this.fovFreeze.AutoSize = true;
-            this.fovFreeze.BackColor = System.Drawing.Color.Transparent;
-            this.fovFreeze.Location = new System.Drawing.Point(661, 28);
-            this.fovFreeze.Name = "fovFreeze";
-            this.fovFreeze.Size = new System.Drawing.Size(15, 14);
-            this.fovFreeze.TabIndex = 44;
-            this.fovFreeze.UseVisualStyleBackColor = false;
             // 
             // warpComboBox
             // 
@@ -1163,135 +778,6 @@
             this.warpComboBox.Size = new System.Drawing.Size(248, 23);
             this.warpComboBox.TabIndex = 42;
             // 
-            // groupBoxGuards
-            // 
-            this.groupBoxGuards.Controls.Add(this.despawnSwarmers);
-            this.groupBoxGuards.Controls.Add(this.despawnReload);
-            this.groupBoxGuards.Controls.Add(this.despawnFlashlight);
-            this.groupBoxGuards.Controls.Add(this.despawnInanimate);
-            this.groupBoxGuards.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxGuards.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBoxGuards.Location = new System.Drawing.Point(19, 200);
-            this.groupBoxGuards.Name = "groupBoxGuards";
-            this.groupBoxGuards.Size = new System.Drawing.Size(200, 128);
-            this.groupBoxGuards.TabIndex = 41;
-            this.groupBoxGuards.TabStop = false;
-            this.groupBoxGuards.Text = "Despawn Guards";
-            // 
-            // despawnSwarmers
-            // 
-            this.despawnSwarmers.AutoSize = true;
-            this.despawnSwarmers.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.despawnSwarmers.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.despawnSwarmers.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.despawnSwarmers.Location = new System.Drawing.Point(7, 24);
-            this.despawnSwarmers.Name = "despawnSwarmers";
-            this.despawnSwarmers.Size = new System.Drawing.Size(100, 23);
-            this.despawnSwarmers.TabIndex = 37;
-            this.despawnSwarmers.Text = "Swarmers";
-            this.despawnSwarmers.UseVisualStyleBackColor = true;
-            // 
-            // despawnReload
-            // 
-            this.despawnReload.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.despawnReload.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.despawnReload.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.despawnReload.Location = new System.Drawing.Point(10, 95);
-            this.despawnReload.Name = "despawnReload";
-            this.despawnReload.Size = new System.Drawing.Size(120, 27);
-            this.despawnReload.TabIndex = 40;
-            this.despawnReload.Text = "Apply && Reload";
-            this.despawnReload.UseVisualStyleBackColor = true;
-            this.despawnReload.Click += new System.EventHandler(this.despawnReload_Click);
-            // 
-            // despawnFlashlight
-            // 
-            this.despawnFlashlight.AutoSize = true;
-            this.despawnFlashlight.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.despawnFlashlight.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.despawnFlashlight.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.despawnFlashlight.Location = new System.Drawing.Point(6, 47);
-            this.despawnFlashlight.Name = "despawnFlashlight";
-            this.despawnFlashlight.Size = new System.Drawing.Size(181, 23);
-            this.despawnFlashlight.TabIndex = 38;
-            this.despawnFlashlight.Text = "Flashlight Guards";
-            this.despawnFlashlight.UseVisualStyleBackColor = true;
-            // 
-            // despawnInanimate
-            // 
-            this.despawnInanimate.AutoSize = true;
-            this.despawnInanimate.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.despawnInanimate.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.despawnInanimate.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.despawnInanimate.Location = new System.Drawing.Point(6, 71);
-            this.despawnInanimate.Name = "despawnInanimate";
-            this.despawnInanimate.Size = new System.Drawing.Size(181, 23);
-            this.despawnInanimate.TabIndex = 39;
-            this.despawnInanimate.Text = "Inanimate Dangers";
-            this.despawnInanimate.UseVisualStyleBackColor = true;
-            // 
-            // resetDraw
-            // 
-            this.resetDraw.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.resetDraw.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resetDraw.Location = new System.Drawing.Point(610, 54);
-            this.resetDraw.Name = "resetDraw";
-            this.resetDraw.Size = new System.Drawing.Size(46, 20);
-            this.resetDraw.TabIndex = 36;
-            this.resetDraw.Text = "Reset";
-            this.resetDraw.UseVisualStyleBackColor = true;
-            // 
-            // labelDraw
-            // 
-            this.labelDraw.AutoSize = true;
-            this.labelDraw.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDraw.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelDraw.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelDraw.Location = new System.Drawing.Point(438, 54);
-            this.labelDraw.Name = "labelDraw";
-            this.labelDraw.Size = new System.Drawing.Size(140, 22);
-            this.labelDraw.TabIndex = 35;
-            this.labelDraw.Text = "Draw Distance";
-            this.labelDraw.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // trackBarDraw
-            // 
-            this.trackBarDraw.Location = new System.Drawing.Point(672, 52);
-            this.trackBarDraw.Name = "trackBarDraw";
-            this.trackBarDraw.Size = new System.Drawing.Size(104, 45);
-            this.trackBarDraw.TabIndex = 34;
-            // 
-            // resetFOV
-            // 
-            this.resetFOV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.resetFOV.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resetFOV.Location = new System.Drawing.Point(610, 24);
-            this.resetFOV.Name = "resetFOV";
-            this.resetFOV.Size = new System.Drawing.Size(46, 20);
-            this.resetFOV.TabIndex = 33;
-            this.resetFOV.Text = "Reset";
-            this.resetFOV.UseVisualStyleBackColor = true;
-            // 
-            // labelFOV
-            // 
-            this.labelFOV.AutoSize = true;
-            this.labelFOV.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFOV.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelFOV.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelFOV.Location = new System.Drawing.Point(438, 24);
-            this.labelFOV.Name = "labelFOV";
-            this.labelFOV.Size = new System.Drawing.Size(40, 22);
-            this.labelFOV.TabIndex = 32;
-            this.labelFOV.Text = "FOV";
-            this.labelFOV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // trackBarFOV
-            // 
-            this.trackBarFOV.Location = new System.Drawing.Point(672, 22);
-            this.trackBarFOV.Name = "trackBarFOV";
-            this.trackBarFOV.Size = new System.Drawing.Size(104, 45);
-            this.trackBarFOV.TabIndex = 31;
-            // 
             // resetGameClock
             // 
             this.resetGameClock.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -1302,6 +788,7 @@
             this.resetGameClock.TabIndex = 27;
             this.resetGameClock.Text = "Reset";
             this.resetGameClock.UseVisualStyleBackColor = true;
+            this.resetGameClock.Click += new System.EventHandler(this.resetGameClock_Click);
             // 
             // labelFieldClock
             // 
@@ -1315,17 +802,6 @@
             this.labelFieldClock.TabIndex = 26;
             this.labelFieldClock.Text = "Game Clock";
             this.labelFieldClock.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // trackBarGameClock
-            // 
-            this.trackBarGameClock.Location = new System.Drawing.Point(122, 113);
-            this.trackBarGameClock.Maximum = 500;
-            this.trackBarGameClock.Minimum = 50;
-            this.trackBarGameClock.Name = "trackBarGameClock";
-            this.trackBarGameClock.Size = new System.Drawing.Size(104, 45);
-            this.trackBarGameClock.TabIndex = 25;
-            this.trackBarGameClock.Value = 50;
-            this.trackBarGameClock.ValueChanged += new System.EventHandler(this.trackBarGameClock_ValueChanged);
             // 
             // currentMap
             // 
@@ -1448,9 +924,108 @@
             this.reloadLvl.UseVisualStyleBackColor = true;
             this.reloadLvl.Click += new System.EventHandler(this.reloadLvl_Click);
             // 
+            // camTab
+            // 
+            this.camTab.BackColor = System.Drawing.Color.Gray;
+            this.camTab.Controls.Add(this.drawFreeze);
+            this.camTab.Controls.Add(this.fovFreeze);
+            this.camTab.Controls.Add(this.resetDraw);
+            this.camTab.Controls.Add(this.labelDraw);
+            this.camTab.Controls.Add(this.trackBarDraw);
+            this.camTab.Controls.Add(this.resetFOV);
+            this.camTab.Controls.Add(this.labelFOV);
+            this.camTab.Controls.Add(this.trackBarFOV);
+            this.camTab.Location = new System.Drawing.Point(4, 4);
+            this.camTab.Name = "camTab";
+            this.camTab.Size = new System.Drawing.Size(675, 342);
+            this.camTab.TabIndex = 5;
+            this.camTab.Text = "Camera";
+            // 
+            // drawFreeze
+            // 
+            this.drawFreeze.AutoSize = true;
+            this.drawFreeze.BackColor = System.Drawing.Color.Transparent;
+            this.drawFreeze.Location = new System.Drawing.Point(237, 46);
+            this.drawFreeze.Name = "drawFreeze";
+            this.drawFreeze.Size = new System.Drawing.Size(15, 14);
+            this.drawFreeze.TabIndex = 53;
+            this.drawFreeze.UseVisualStyleBackColor = false;
+            // 
+            // fovFreeze
+            // 
+            this.fovFreeze.AutoSize = true;
+            this.fovFreeze.BackColor = System.Drawing.Color.Transparent;
+            this.fovFreeze.Location = new System.Drawing.Point(237, 19);
+            this.fovFreeze.Name = "fovFreeze";
+            this.fovFreeze.Size = new System.Drawing.Size(15, 14);
+            this.fovFreeze.TabIndex = 52;
+            this.fovFreeze.UseVisualStyleBackColor = false;
+            // 
+            // resetDraw
+            // 
+            this.resetDraw.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.resetDraw.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetDraw.Location = new System.Drawing.Point(186, 42);
+            this.resetDraw.Name = "resetDraw";
+            this.resetDraw.Size = new System.Drawing.Size(46, 20);
+            this.resetDraw.TabIndex = 51;
+            this.resetDraw.Text = "Reset";
+            this.resetDraw.UseVisualStyleBackColor = true;
+            // 
+            // labelDraw
+            // 
+            this.labelDraw.AutoSize = true;
+            this.labelDraw.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDraw.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelDraw.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelDraw.Location = new System.Drawing.Point(14, 42);
+            this.labelDraw.Name = "labelDraw";
+            this.labelDraw.Size = new System.Drawing.Size(140, 22);
+            this.labelDraw.TabIndex = 50;
+            this.labelDraw.Text = "Draw Distance";
+            this.labelDraw.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // trackBarDraw
+            // 
+            this.trackBarDraw.Location = new System.Drawing.Point(248, 40);
+            this.trackBarDraw.Name = "trackBarDraw";
+            this.trackBarDraw.Size = new System.Drawing.Size(104, 45);
+            this.trackBarDraw.TabIndex = 49;
+            // 
+            // resetFOV
+            // 
+            this.resetFOV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.resetFOV.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetFOV.Location = new System.Drawing.Point(186, 15);
+            this.resetFOV.Name = "resetFOV";
+            this.resetFOV.Size = new System.Drawing.Size(46, 20);
+            this.resetFOV.TabIndex = 48;
+            this.resetFOV.Text = "Reset";
+            this.resetFOV.UseVisualStyleBackColor = true;
+            // 
+            // labelFOV
+            // 
+            this.labelFOV.AutoSize = true;
+            this.labelFOV.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFOV.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelFOV.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelFOV.Location = new System.Drawing.Point(14, 15);
+            this.labelFOV.Name = "labelFOV";
+            this.labelFOV.Size = new System.Drawing.Size(40, 22);
+            this.labelFOV.TabIndex = 47;
+            this.labelFOV.Text = "FOV";
+            this.labelFOV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // trackBarFOV
+            // 
+            this.trackBarFOV.Location = new System.Drawing.Point(248, 13);
+            this.trackBarFOV.Name = "trackBarFOV";
+            this.trackBarFOV.Size = new System.Drawing.Size(104, 45);
+            this.trackBarFOV.TabIndex = 46;
+            // 
             // entTab
             // 
-            this.entTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
+            this.entTab.BackColor = System.Drawing.Color.Gray;
             this.entTab.Controls.Add(this.entitySelector);
             this.entTab.Controls.Add(this.entTransformBox);
             this.entTab.Controls.Add(this.labelEntID);
@@ -1460,13 +1035,13 @@
             this.entTab.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entTab.Location = new System.Drawing.Point(4, 4);
             this.entTab.Name = "entTab";
-            this.entTab.Size = new System.Drawing.Size(793, 342);
+            this.entTab.Size = new System.Drawing.Size(675, 342);
             this.entTab.TabIndex = 3;
-            this.entTab.Text = "Entity";
+            this.entTab.Text = "Entities";
             // 
             // entitySelector
             // 
-            this.entitySelector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(40)))));
+            this.entitySelector.BackColor = System.Drawing.Color.Gray;
             this.entitySelector.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entitySelector.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.entitySelector.FormattingEnabled = true;
@@ -1474,19 +1049,16 @@
             this.entitySelector.Items.AddRange(new object[] {
             "Sly",
             "Bentley",
-            "Murray",
-            "Neyla",
-            "Dimitri",
-            "Carmelita"});
-            this.entitySelector.Location = new System.Drawing.Point(19, 177);
+            "Murray"});
+            this.entitySelector.Location = new System.Drawing.Point(19, 253);
             this.entitySelector.Name = "entitySelector";
-            this.entitySelector.ScrollAlwaysVisible = true;
-            this.entitySelector.Size = new System.Drawing.Size(217, 137);
+            this.entitySelector.Size = new System.Drawing.Size(212, 61);
             this.entitySelector.TabIndex = 55;
             this.entitySelector.SelectedIndexChanged += new System.EventHandler(this.entitySelector_SelectedIndexChanged);
             // 
             // entTransformBox
             // 
+            this.entTransformBox.Controls.Add(this.entScaleReset);
             this.entTransformBox.Controls.Add(this.entScaleTrackbar);
             this.entTransformBox.Controls.Add(this.entScale);
             this.entTransformBox.Controls.Add(this.labelEntLocate);
@@ -1496,7 +1068,6 @@
             this.entTransformBox.Controls.Add(this.entZ);
             this.entTransformBox.Controls.Add(this.entIncreaseX);
             this.entTransformBox.Controls.Add(this.entFreezeY);
-            this.entTransformBox.Controls.Add(this.labelEntRotation);
             this.entTransformBox.Controls.Add(this.labelEntZ);
             this.entTransformBox.Controls.Add(this.labelEntY);
             this.entTransformBox.Controls.Add(this.entY);
@@ -1513,10 +1084,23 @@
             this.entTransformBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.entTransformBox.Location = new System.Drawing.Point(254, 16);
             this.entTransformBox.Name = "entTransformBox";
-            this.entTransformBox.Size = new System.Drawing.Size(522, 298);
+            this.entTransformBox.Size = new System.Drawing.Size(407, 298);
             this.entTransformBox.TabIndex = 53;
             this.entTransformBox.TabStop = false;
             this.entTransformBox.Text = "Entity Struct";
+            // 
+            // entScaleReset
+            // 
+            this.entScaleReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.entScaleReset.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entScaleReset.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.entScaleReset.Location = new System.Drawing.Point(300, 153);
+            this.entScaleReset.Name = "entScaleReset";
+            this.entScaleReset.Size = new System.Drawing.Size(21, 21);
+            this.entScaleReset.TabIndex = 58;
+            this.entScaleReset.Text = "1";
+            this.entScaleReset.UseVisualStyleBackColor = true;
+            this.entScaleReset.Click += new System.EventHandler(this.entScaleReset_Click);
             // 
             // entScaleTrackbar
             // 
@@ -1631,17 +1215,6 @@
             this.entFreezeY.Text = "Freeze";
             this.entFreezeY.UseVisualStyleBackColor = true;
             this.entFreezeY.Click += new System.EventHandler(this.entFreezeY_Click);
-            // 
-            // labelEntRotation
-            // 
-            this.labelEntRotation.AutoSize = true;
-            this.labelEntRotation.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEntRotation.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelEntRotation.Location = new System.Drawing.Point(16, 176);
-            this.labelEntRotation.Name = "labelEntRotation";
-            this.labelEntRotation.Size = new System.Drawing.Size(90, 22);
-            this.labelEntRotation.TabIndex = 50;
-            this.labelEntRotation.Text = "Rotation";
             // 
             // labelEntZ
             // 
@@ -1836,43 +1409,94 @@
             // 
             // miscTab
             // 
-            this.miscTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(25)))));
-            this.miscTab.Controls.Add(this.clueScriptButton);
+            this.miscTab.BackColor = System.Drawing.Color.Gray;
             this.miscTab.Controls.Add(this.miscBox);
             this.miscTab.Controls.Add(this.weedButton);
             this.miscTab.Controls.Add(this.buttonJobful);
             this.miscTab.Location = new System.Drawing.Point(4, 4);
             this.miscTab.Margin = new System.Windows.Forms.Padding(8);
             this.miscTab.Name = "miscTab";
-            this.miscTab.Size = new System.Drawing.Size(793, 342);
+            this.miscTab.Size = new System.Drawing.Size(675, 342);
             this.miscTab.TabIndex = 4;
             this.miscTab.Text = "Misc.";
             // 
-            // clueScriptButton
-            // 
-            this.clueScriptButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clueScriptButton.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clueScriptButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.clueScriptButton.Location = new System.Drawing.Point(631, 49);
-            this.clueScriptButton.Name = "clueScriptButton";
-            this.clueScriptButton.Size = new System.Drawing.Size(155, 29);
-            this.clueScriptButton.TabIndex = 44;
-            this.clueScriptButton.Text = "Clue Script";
-            this.clueScriptButton.UseVisualStyleBackColor = true;
-            this.clueScriptButton.Click += new System.EventHandler(this.clueScriptButton_Click);
-            // 
             // miscBox
             // 
+            this.miscBox.BackColor = System.Drawing.Color.Gray;
+            this.miscBox.Controls.Add(this.reloadLang);
+            this.miscBox.Controls.Add(this.currentLang);
+            this.miscBox.Controls.Add(this.labelLang);
+            this.miscBox.Controls.Add(this.langSelector);
             this.miscBox.Controls.Add(this.groupMusic);
-            this.miscBox.Controls.Add(this.disableTextures);
             this.miscBox.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.miscBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.miscBox.Location = new System.Drawing.Point(12, 14);
             this.miscBox.Name = "miscBox";
-            this.miscBox.Size = new System.Drawing.Size(612, 317);
+            this.miscBox.Size = new System.Drawing.Size(487, 317);
             this.miscBox.TabIndex = 43;
             this.miscBox.TabStop = false;
             this.miscBox.Text = "Miscellanenous";
+            // 
+            // reloadLang
+            // 
+            this.reloadLang.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.reloadLang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.reloadLang.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reloadLang.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.reloadLang.Location = new System.Drawing.Point(270, 282);
+            this.reloadLang.Name = "reloadLang";
+            this.reloadLang.Size = new System.Drawing.Size(81, 29);
+            this.reloadLang.TabIndex = 56;
+            this.reloadLang.Text = "Apply";
+            this.reloadLang.UseVisualStyleBackColor = true;
+            // 
+            // currentLang
+            // 
+            this.currentLang.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentLang.ForeColor = System.Drawing.Color.White;
+            this.currentLang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.currentLang.Location = new System.Drawing.Point(129, 257);
+            this.currentLang.Name = "currentLang";
+            this.currentLang.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.currentLang.Size = new System.Drawing.Size(225, 22);
+            this.currentLang.TabIndex = 55;
+            this.currentLang.Text = "???";
+            this.currentLang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelLang
+            // 
+            this.labelLang.AutoSize = true;
+            this.labelLang.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLang.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelLang.Location = new System.Drawing.Point(12, 256);
+            this.labelLang.Name = "labelLang";
+            this.labelLang.Size = new System.Drawing.Size(90, 22);
+            this.labelLang.TabIndex = 54;
+            this.labelLang.Text = "Language";
+            // 
+            // langSelector
+            // 
+            this.langSelector.DropDownHeight = 160;
+            this.langSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.langSelector.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.langSelector.FormattingEnabled = true;
+            this.langSelector.IntegralHeight = false;
+            this.langSelector.Items.AddRange(new object[] {
+            "English",
+            "Français",
+            "Deutsch",
+            "Español",
+            "Italiano",
+            "Nederlands",
+            "Português",
+            "Dansk",
+            "Suomalainen",
+            "Norsk",
+            "Svensk"});
+            this.langSelector.Location = new System.Drawing.Point(16, 285);
+            this.langSelector.Name = "langSelector";
+            this.langSelector.Size = new System.Drawing.Size(248, 23);
+            this.langSelector.TabIndex = 53;
             // 
             // groupMusic
             // 
@@ -1884,7 +1508,7 @@
             this.groupMusic.Controls.Add(this.battleMusic);
             this.groupMusic.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupMusic.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupMusic.Location = new System.Drawing.Point(433, 18);
+            this.groupMusic.Location = new System.Drawing.Point(310, 15);
             this.groupMusic.Name = "groupMusic";
             this.groupMusic.Size = new System.Drawing.Size(163, 196);
             this.groupMusic.TabIndex = 52;
@@ -1958,25 +1582,14 @@
             this.battleMusic.Text = "Battle";
             this.battleMusic.UseVisualStyleBackColor = true;
             // 
-            // disableTextures
-            // 
-            this.disableTextures.AutoSize = true;
-            this.disableTextures.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.disableTextures.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.disableTextures.Location = new System.Drawing.Point(16, 35);
-            this.disableTextures.Name = "disableTextures";
-            this.disableTextures.Size = new System.Drawing.Size(172, 23);
-            this.disableTextures.TabIndex = 48;
-            this.disableTextures.Text = "Disable Textures";
-            this.disableTextures.UseVisualStyleBackColor = true;
-            // 
             // weedButton
             // 
             this.weedButton.BackColor = System.Drawing.Color.Transparent;
             this.weedButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.weedButton.ErrorImage = global::syhax.Properties.Resources.weed;
             this.weedButton.Image = global::syhax.Properties.Resources.weed;
             this.weedButton.InitialImage = null;
-            this.weedButton.Location = new System.Drawing.Point(714, 270);
+            this.weedButton.Location = new System.Drawing.Point(593, 271);
             this.weedButton.Name = "weedButton";
             this.weedButton.Size = new System.Drawing.Size(68, 61);
             this.weedButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1989,7 +1602,7 @@
             this.buttonJobful.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonJobful.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonJobful.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonJobful.Location = new System.Drawing.Point(630, 14);
+            this.buttonJobful.Location = new System.Drawing.Point(505, 14);
             this.buttonJobful.Name = "buttonJobful";
             this.buttonJobful.Size = new System.Drawing.Size(156, 29);
             this.buttonJobful.TabIndex = 41;
@@ -2000,9 +1613,9 @@
             // 
             this.labelAttached.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelAttached.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAttached.ForeColor = System.Drawing.Color.Red;
+            this.labelAttached.ForeColor = System.Drawing.Color.LightCoral;
             this.labelAttached.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labelAttached.Location = new System.Drawing.Point(586, 12);
+            this.labelAttached.Location = new System.Drawing.Point(464, 12);
             this.labelAttached.Name = "labelAttached";
             this.labelAttached.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelAttached.Size = new System.Drawing.Size(230, 22);
@@ -2013,11 +1626,11 @@
             // currentGame
             // 
             this.currentGame.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentGame.ForeColor = System.Drawing.Color.Red;
+            this.currentGame.ForeColor = System.Drawing.Color.LightCoral;
             this.currentGame.Location = new System.Drawing.Point(12, 12);
             this.currentGame.Name = "currentGame";
             this.currentGame.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.currentGame.Size = new System.Drawing.Size(640, 22);
+            this.currentGame.Size = new System.Drawing.Size(508, 22);
             this.currentGame.TabIndex = 40;
             this.currentGame.Text = "No Game";
             this.currentGame.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2025,26 +1638,34 @@
             // syhaxLogo
             // 
             this.syhaxLogo.ActiveLinkColor = System.Drawing.Color.MediumTurquoise;
+            this.syhaxLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.syhaxLogo.AutoSize = true;
             this.syhaxLogo.BackColor = System.Drawing.Color.Transparent;
             this.syhaxLogo.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold);
             this.syhaxLogo.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.syhaxLogo.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.syhaxLogo.LinkColor = System.Drawing.SystemColors.InactiveCaption;
-            this.syhaxLogo.Location = new System.Drawing.Point(754, 386);
+            this.syhaxLogo.Location = new System.Drawing.Point(632, 386);
             this.syhaxLogo.Name = "syhaxLogo";
             this.syhaxLogo.Size = new System.Drawing.Size(60, 22);
             this.syhaxLogo.TabIndex = 43;
             this.syhaxLogo.TabStop = true;
             this.syhaxLogo.Text = "syhax";
-            this.syhaxLogo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.syhaxLogo.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.syhaxLogo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.syhaxLogo_LinkClicked);
+            // 
+            // toolTip
+            // 
+            this.toolTip.IsBalloon = true;
+            this.toolTip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip.ToolTipTitle = "Information";
             // 
             // syhax2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(10)))));
-            this.ClientSize = new System.Drawing.Size(822, 412);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(700, 412);
             this.Controls.Add(this.syhaxLogo);
             this.Controls.Add(this.currentGame);
             this.Controls.Add(this.labelAttached);
@@ -2054,31 +1675,26 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(842, 455);
-            this.MinimumSize = new System.Drawing.Size(842, 455);
             this.Name = "syhax2";
             this.Text = "syhax";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.syhax2_FormClosed);
             this.Load += new System.EventHandler(this.syhax2_Load);
-            jobPage.ResumeLayout(false);
-            jobPage.PerformLayout();
-            guiPage.ResumeLayout(false);
-            guiPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(trackBarGameClock)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.charTab.ResumeLayout(false);
             this.charTab.PerformLayout();
             this.groupTransform.ResumeLayout(false);
             this.groupTransform.PerformLayout();
-            this.charMovementBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.actScaleTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xyzTrackBar)).EndInit();
             this.groupPowers.ResumeLayout(false);
             this.groupPowers.PerformLayout();
             this.engineTab.ResumeLayout(false);
             this.engineTab.PerformLayout();
-            this.groupBoxGuards.ResumeLayout(false);
-            this.groupBoxGuards.PerformLayout();
+            this.camTab.ResumeLayout(false);
+            this.camTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarDraw)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarFOV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarGameClock)).EndInit();
             this.entTab.ResumeLayout(false);
             this.entTab.PerformLayout();
             this.entTransformBox.ResumeLayout(false);
@@ -2147,59 +1763,25 @@
         private System.Windows.Forms.Label labelMap;
         private System.Windows.Forms.Label labelAttached;
         private System.Windows.Forms.Label currentGame;
-        private System.Windows.Forms.TextBox textBoxActX;
-        private System.Windows.Forms.TextBox textBoxActZ;
-        private System.Windows.Forms.TextBox textBoxActY;
-        private System.Windows.Forms.Button setActZ;
-        private System.Windows.Forms.Button setActY;
-        private System.Windows.Forms.Button setActX;
         private System.Windows.Forms.TrackBar xyzTrackBar;
-        private System.Windows.Forms.CheckBox checkBoxFly;
         private System.Windows.Forms.CheckBox checkBoxInfJumps;
         private System.Windows.Forms.CheckBox infGadget;
         private System.Windows.Forms.Button resetGameClock;
         private System.Windows.Forms.Label labelFieldClock;
-        private System.Windows.Forms.TrackBar trackBarGameClock;
-        private System.Windows.Forms.Button resetFOV;
-        private System.Windows.Forms.Label labelFOV;
-        private System.Windows.Forms.TrackBar trackBarFOV;
-        private System.Windows.Forms.Button resetDraw;
-        private System.Windows.Forms.Label labelDraw;
-        private System.Windows.Forms.TrackBar trackBarDraw;
-        private System.Windows.Forms.GroupBox groupBoxGuards;
-        private System.Windows.Forms.CheckBox despawnSwarmers;
-        private System.Windows.Forms.Button despawnReload;
-        private System.Windows.Forms.CheckBox despawnFlashlight;
-        private System.Windows.Forms.CheckBox despawnInanimate;
         private System.Windows.Forms.TabPage miscTab;
         private System.Windows.Forms.ComboBox warpComboBox;
         private System.Windows.Forms.LinkLabel syhaxLogo;
         private System.Windows.Forms.TrackBar entIncSlider;
         private System.Windows.Forms.Label labelEntScale;
         private System.Windows.Forms.Label labelEntTransform;
-        private System.Windows.Forms.Label labelEntRotation;
         private System.Windows.Forms.GroupBox entTransformBox;
         private System.Windows.Forms.TrackBar entScaleTrackbar;
         private System.Windows.Forms.Label entScale;
-        private System.Windows.Forms.CheckBox drawFreeze;
-        private System.Windows.Forms.CheckBox fovFreeze;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ListBox entitySelector;
-        private System.Windows.Forms.Label currentJob;
-        private System.Windows.Forms.Label labelJob;
-        private System.Windows.Forms.ComboBox jobComboBox;
-        private System.Windows.Forms.Button loadJob;
-        private System.Windows.Forms.GroupBox dagEditor;
-        private System.Windows.Forms.GroupBox charMovementBox;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Button buttonJobful;
         private System.Windows.Forms.PictureBox weedButton;
         private System.Windows.Forms.GroupBox miscBox;
-        private System.Windows.Forms.Label currentLang;
-        private System.Windows.Forms.Label labelLang;
-        private System.Windows.Forms.ComboBox langSelector;
-        private System.Windows.Forms.CheckBox disableTextures;
-        private System.Windows.Forms.Button reloadLang;
         private System.Windows.Forms.Label labelSuck;
         private System.Windows.Forms.Button setSuck;
         private System.Windows.Forms.TextBox suckBox;
@@ -2217,24 +1799,31 @@
         private System.Windows.Forms.Button actHPDecrease;
         private System.Windows.Forms.Button actHPIncrease;
         private System.Windows.Forms.Button buttonGadgets;
-        private System.Windows.Forms.Button clueScriptButton;
         private System.Windows.Forms.GroupBox groupPowers;
         private System.Windows.Forms.Label actHealth;
         private System.Windows.Forms.GroupBox groupTransform;
         private System.Windows.Forms.CheckBox godMode;
         private System.Windows.Forms.CheckBox guardIgnore;
+        private System.Windows.Forms.TabPage camTab;
+        private System.Windows.Forms.Button reloadLang;
+        private System.Windows.Forms.Label currentLang;
+        private System.Windows.Forms.Label labelLang;
+        private System.Windows.Forms.ComboBox langSelector;
         private System.Windows.Forms.CheckBox checkSPFreeze;
-        private System.Windows.Forms.Button activateGUI;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label labelBottString;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label labelMidString;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label labelTopString;
-        private System.Windows.Forms.ListBox guiSelector;
+        private System.Windows.Forms.CheckBox drawFreeze;
+        private System.Windows.Forms.CheckBox fovFreeze;
+        private System.Windows.Forms.Button resetDraw;
+        private System.Windows.Forms.Label labelDraw;
+        private System.Windows.Forms.TrackBar trackBarDraw;
+        private System.Windows.Forms.Button resetFOV;
+        private System.Windows.Forms.Label labelFOV;
+        private System.Windows.Forms.TrackBar trackBarFOV;
+        private System.Windows.Forms.Button actScaleReset;
+        private System.Windows.Forms.TrackBar actScaleTrackBar;
+        private System.Windows.Forms.Label actScale;
+        private System.Windows.Forms.Label labelActScale;
+        private System.Windows.Forms.Button entScaleReset;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }
 
